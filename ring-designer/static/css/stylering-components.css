@@ -1,0 +1,176 @@
+/* Fullsize shadow display */
+.fullsize-shadow {
+    display: none;
+}
+
+/* Popup styles */
+.popup {
+    height: 430px;
+    max-width: 1024px;
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Logo styles */
+.logo img {
+    float: unset;
+}
+
+/* Button styles */
+#load-file-input {
+    display: none;
+}
+
+#saving-button {
+    display: none;
+}
+
+.loading-img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Select styles */
+.surface-switch-trigger,
+#select-material {
+    display: none;
+}
+
+/* Info display */
+.bounding-box-info {
+    visibility: hidden;
+}
+
+#viewerCanvas {
+    width: 1920px;
+    height: 860px;
+    visibility: visible;
+}
+
+.alert-surfacestopped {
+    display: none;
+}
+
+#tooltip {
+    display: block;
+}
+
+#infos-line {
+    display: none;
+    visibility: visible;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.hand-buttons {
+    display: none;
+}
+
+/* Modal styles */
+.size-guide-content {
+    margin: 20px;
+}
+
+.size-guide-image {
+    margin: 20px;
+    width: 100%;
+}
+
+/* Login/Register styles */
+.auth-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#to-register-trigger,
+#to-connect-trigger {
+    display: inline-block;
+}
+
+/* Font styles */
+.reset-title {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* File button list */
+#file-button-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Additional styles for help section */
+.adjust-tuto-link {
+    display: none;
+}
+
+/* Styles for material and finish options */
+.material-options,
+.finish-options {
+    margin-bottom: 15px;
+}
+
+/* Range slider container styles */
+.range-container {
+    margin: 20px 0;
+}
+
+/* Alert message styles */
+.alert-recompute {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.alert-recompute .alert-link {
+    margin-left: 10px;
+}
+
+/* File list styles */
+.file-list-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Popup dialog styles */
+.popup-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.popup-reset {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Popup heights */
+.popup-signin {
+    height: 340px;
+}
+
+.popup-register {
+    height: 360px;
+}
+
+.popup-reset {
+    height: 260px;
+}

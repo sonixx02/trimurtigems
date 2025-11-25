@@ -1,0 +1,524 @@
+/****** MIXINS *****/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/** ADD BY MOUSTACH **/
+@charset "UTF-8";
+body {
+  overflow: hidden;
+}
+#content {
+  height: calc(100% - 60px);
+  padding-bottom: 0px;
+}
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+/*** CREATION ***/
+.creation-section {
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.creation-section h2 {
+  font-size: 28px;
+}
+.creation-section #webgl {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.creation-section #webgl canvas {
+  width: 100%;
+  height: 100%;
+}
+.creation-section .nav-tabs-icons {
+  margin-bottom: -1px;
+}
+.creation-section .nav-tabs-icons li a {
+  border-color: #d9d8d8;
+}
+.creation-section .nav-tabs-icons li a > span {
+  background-image: url(../img/bg/coche-dark.png);
+}
+.creation-section .nav-tabs-icons li a > span b {
+  background-color: #4d4d4d;
+}
+.creation-section .nav-tabs-icons li a > i {
+  background-image: url(../img/icon/stylering-tools.svg);
+  background-position: 7px 3px;
+}
+.creation-section .nav-tabs-icons li a.cart-trigger > i {
+  background-position: 7px 3px;
+}
+.creation-section .nav-tabs-icons li a.skimring-trigger > i {
+  background-position: -84px 3px;
+}
+.creation-section .nav-tabs-icons li a.helper-trigger > i {
+  background-position: -38px 3px;
+}
+.creation-section .nav-tabs-icons li a:hover {
+  border-color: #4d4d4d !important;
+}
+.creation-section .nav-tabs-icons li.active a {
+  border-color: #FFF;
+}
+.creation-section .nav-tabs-icons .cart-icon {
+  background-image: url(https://www.jweel.com/static/img/icon/stylering-cart-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.creation-section .overlay-help {
+  position: absolute;
+  overflow: hidden;
+  background: #008695;
+  padding-top: 60px;
+  background: rgba(0, 134, 149, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+.creation-section .overlay-help .slide {
+  height: 100%;
+  width: 100%;
+}
+.creation-section .overlay-help .slide .carousel-inner {
+  height: 100%;
+}
+.creation-section .overlay-help .slide .carousel-inner .item {
+  height: 100%;
+  width: 100%;
+}
+.creation-section .overlay-help .slide .carousel-indicators {
+  position: absolute;
+  bottom: 5%;
+  right: 70px;
+  left: auto;
+  width: auto;
+}
+.creation-section .overlay-help .description {
+  position: absolute;
+  right: 70px;
+  bottom: 10%;
+}
+.creation-section .overlay-help .description h3 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  font-weight: 700;
+}
+.creation-section .overlay-help .description h2 {
+  line-height: 1.5em;
+  color: #FFF;
+  font-size: 40px;
+  margin-top: 0;
+}
+.creation-section .overlay-help .description label {
+  font-size: 14px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: normal;
+  display: block;
+  padding: 10px 0;
+}
+.creation-section .overlay-help .description .go-next-slide-trigger {
+  background: #FFF;
+  border-color: #FFF;
+  color: #002e32;
+  margin-left: 6px;
+}
+.creation-section .overlay-help .description .go-next-slide-trigger:hover {
+  background: #002e32;
+  border-color: #002e32;
+  color: #FFF;
+}
+.creation-section .overlay-help .legends {
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+  /*position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            margin-top: -280px;
+
+            .legend {
+                position: absolute;
+                font-weight: 300;
+                font-size: 24px;
+                display: block;
+                background-repeat: no-repeat;
+                background-position: left center;
+
+                &.nav-legend {
+                    font-size: 18px;
+                    line-height: 40px;
+                    background-image: url(../img/bg/nav-legend.png);
+                    padding-left: 34px;
+                    left: 270px;
+                }
+                &.fonts-legend {
+                    background-image: url(../img/bg/fonts-legend.png);
+                    padding-left: 165px;
+                    left: 225px;
+                    top: 142px;
+                }
+                &.text-legend {
+                    background-image: url(../img/bg/text-legend.png);
+                    padding-left: 195px;
+                    height: 75px;
+                    left: 225px;
+                    top: 185px;
+                }
+                &.size-legend {
+                    background-image: url(../img/bg/size-legend.png);
+                    padding-left: 75px;
+                    left: 235px;
+                    top: 312px;
+                }
+                &.generate-legend {
+                    background-image: url(../img/bg/generate-legend.png);
+                    padding-left: 75px;
+                    left: 225px;
+                    top: 420px;
+                }
+                &.shuffle-legend {
+                    background-image: url(../img/bg/shuffle-legend.png);
+                    padding-left: 185px;
+                    padding-top: 55px;
+                    height: 75px;
+                    left: 40px;
+                    top: 520px;
+                    font-size: 18px;
+                }
+            }*/
+}
+.creation-section .overlay-help .legends .legend {
+  display: table-cell;
+  vertical-align: middle;
+}
+.box-creation {
+  position: relative;
+  z-index: 5;
+}
+.box-creation .generate-3d-trigger,
+.box-creation .add-cart-trigger {
+  width: 100%;
+  padding: 18px 12px;
+}
+.box-creation .shuffle-trigger,
+.box-creation .reset-trigger,
+.box-creation .icon-trigger {
+  border-color: #002e32;
+  color: #002e32;
+}
+.box-creation .shuffle-trigger:hover,
+.box-creation .reset-trigger:hover,
+.box-creation .icon-trigger:hover {
+  background: #002e32;
+  color: #FFF;
+}
+.box-creation .shuffle-trigger.reset-trigger,
+.box-creation .reset-trigger.reset-trigger,
+.box-creation .icon-trigger.reset-trigger {
+  margin-left: 8px;
+  width: 155px;
+}
+.box-creation .sm-button img {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.box-creation .sm-button.redo-trigger:hover {
+  background-color: #000000;
+}
+.box-creation .sm-button.undo-trigger:hover {
+  background-color: #000000;
+}
+.box-creation .sm-button.add-trigger:hover {
+  background-color: #000000;
+}
+.box-creation .file-icon-list {
+  width: 100%;
+  padding: 10px 5px;
+}
+.box-creation .save-creation-trigger {
+  font-size: 14px;
+  text-align: right;
+}
+.box-creation .save-creation-trigger > span {
+  font-size: 18px;
+}
+@media screen and (max-width: 1366px) {
+  .box-creation .content {
+    padding: 5px;
+  }
+  .box-creation h2 {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+  .box-creation .generate-3d-trigger,
+  .box-creation .add-cart-trigger {
+    width: 100%;
+    padding: 10px 8px;
+  }
+  .box-creation .file-icon-list {
+    width: 100%;
+    padding: 10px 8px;
+  }
+  .box-creation .save-creation-trigger {
+    font-size: 10px;
+    text-align: right;
+  }
+  .box-creation .save-creation-trigger > span {
+    font-size: 13px;
+  }
+  .box-creation .panel-heading {
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .box-right .content {
+    padding: 5px 15px;
+  }
+}
+.box-right #helper-content {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: #666666;
+}
+@media screen and (max-width: 1366px) {
+  .box-right #helper-content {
+    width: 200px;
+  }
+}
+.box-right #controlbox {
+  min-width: 150px;
+  font-size: 14px;
+  font-family: arial;
+  margin: 0 auto;
+}
+.box-right #controlbox .controls {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 14px;
+  color: #4d4d4d;
+}
+.box-right #controlbox .controls > h3 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 14px;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.box-right #controlbox .controls > table {
+  text-align: center;
+  width: 100%;
+}
+.box-right #controlbox .controls > table tr {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  height: 34px;
+}
+.box-right #controlbox .controls > table tr kbd {
+  font-size: 12px;
+  padding: 2px;
+}
+.box-right #controlbox .controls > table tr .shortcut {
+  text-align: left;
+  padding: 2px;
+  padding-right: 20px;
+  width: 100px;
+  font-family: arial;
+  font-size: 12px;
+}
+.box-right #controlbox .controls > table tr .shortcut .imgclass {
+  width: 20px;
+}
+.box-right #controlbox .controls > table tr .shortcut .imgshortcut {
+  width: 26px;
+  height: 26px;
+}
+.box-right #controlbox .controls > table tr .shortcut .imgon {
+  width: 22px;
+  height: 20px;
+}
+.box-right #controlbox .controls > table tr .shortcut .imgshortcut + span {
+  position: relative;
+  top: -6px;
+}
+.box-right #controlbox .controls > table tr .shortcut input[type="checkbox"] {
+  position: relative;
+  top: 4px;
+}
+.box-right #controlbox .controls > table tr .command_desc {
+  min-width: 60px;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+  text-align: left;
+  font-family: arial;
+  font-size: 13px;
+}
+@media screen and (max-width: 1366px) {
+  .box-right #controlbox {
+    min-width: 100px;
+    font-size: 10px;
+    font-family: arial;
+    margin: 0 auto;
+  }
+  .box-right #controlbox .controls {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 4px 8px 4px 8px;
+    margin: 8px;
+    color: #4d4d4d;
+  }
+  .box-right #controlbox .controls > h3 {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .box-right #controlbox .controls > table tr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    height: 24px;
+  }
+  .box-right #controlbox .controls > table tr kbd {
+    padding: 2px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut {
+    padding: 2px;
+    padding-right: 10px;
+    width: 100px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut .imgclass {
+    width: 20px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut .imgshortcut {
+    width: 20px;
+    height: 20px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut .imgon {
+    width: 22px;
+    height: 20px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut .imgshortcut + span {
+    position: relative;
+    top: -6px;
+  }
+  .box-right #controlbox .controls > table tr .shortcut input[type="checkbox"] {
+    position: relative;
+    top: 4px;
+  }
+  .box-right #controlbox .controls > table tr .command_desc {
+    min-width: 50px;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+  }
+}
+#text {
+  font-size: 22px;
+  font-family: 'Norican, Symbols';
+  font-weight: normal;
+}
+#cart-content {
+  display: none;
+}
+@media screen and (max-width: 1366px) {
+  #cart-content {
+    height: 380px;
+  }
+}
+.nav-tabs {
+  display: none;
+}
+#tooltip {
+  display: none;
+  position: absolute;
+  max-width: 450px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  margin-top: 20px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-family: 'Lato';
+  font-size: 14px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+#tooltip #shrink-tooltip {
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  padding: 5px;
+  line-height: 0px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#expand-tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0px;
+  margin: 15px;
+  z-index: 2;
+  right: 0;
+}
+.ui-effects-transfer {
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.popover {
+  max-width: 350px;
+}
+.btn-hand-left img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
