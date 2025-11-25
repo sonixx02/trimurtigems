@@ -30,6 +30,7 @@ jobs:
         run: |
           cd frontend
           npm run build
+          cp frontend/dist/index.html frontend/dist/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
