@@ -32,7 +32,7 @@ import UserDashboard from "./components/UserDashboard";
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/trimurtigems">
         <div className="min-h-screen">
           <Routes>
             {/* Public Routes */}
