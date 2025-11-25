@@ -23,27 +23,6 @@ const DiamondDetail = () => {
   
   // Advanced Filters
   const [selectedPolish, setSelectedPolish] = useState([]);
-  const [selectedSymmetry, setSelectedSymmetry] = useState([]);
-  const [selectedFluorescence, setSelectedFluorescence] = useState([]);
-  const [tableRange, setTableRange] = useState([50, 80]);
-  const [depthRange, setDepthRange] = useState([50, 80]);
-
-  const shapes = [
-    { name: "Round", image: "/images/round.png" },
-    { name: "Princess", image: "/images/princess.png" },
-    { name: "Emerald", image: "/images/emerald.png" },
-    { name: "Asscher", image: "/images/asscher.png" },
-    { name: "Cushion", image: "/images/cushion.png" },
-    { name: "Marquise", image: "/images/marquise.png" },
-    { name: "Radiant", image: "/images/radiant.png" },
-    { name: "Oval", image: "/images/oval.png" },
-    { name: "Pear", image: "/images/pear.png" },
-    { name: "Heart", image: "/images/heart.png" },
-  ];
-
-  const clarityOptions = ["SI2", "SI1", "VS2", "VS1", "VVS2", "VVS1", "IF", "FL"];
-  const cutOptions = ["Good", "Very Good", "Ideal", "Astor Ideal"];
-  const colorOptions = ["K", "J", "I", "H", "G", "F", "E", "D"];
 
   const toggleFilter = (item, list, setList) => {
     if (list.includes(item)) {

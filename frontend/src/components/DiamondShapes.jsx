@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const shapes = [
-  { name: "Round", image: "/images/round.png" },
-  { name: "Princess", image: "/images/princess.png" },
-  { name: "Emerald", image: "/images/emerald.png" },
-  { name: "Asscher", image: "/images/asscher.png" },
-  { name: "Cushion", image: "/images/cushion.png" },
-  { name: "Marquise", image: "/images/marquise.png" },
-  { name: "Radiant", image: "/images/radiant.png" },
-  { name: "Oval", image: "/images/oval.png" },
-  { name: "Pear", image: "/images/pear.png" },
-  { name: "Heart", image: "/images/heart.png" },
+  { name: "Round", image: `${import.meta.env.BASE_URL}images/round.png` },
+  { name: "Princess", image: `${import.meta.env.BASE_URL}images/princess.png` },
+  { name: "Emerald", image: `${import.meta.env.BASE_URL}images/emerald.png` },
+  { name: "Asscher", image: `${import.meta.env.BASE_URL}images/asscher.png` },
+  { name: "Cushion", image: `${import.meta.env.BASE_URL}images/cushion.png` },
+  { name: "Marquise", image: `${import.meta.env.BASE_URL}images/marquise.png` },
+  { name: "Radiant", image: `${import.meta.env.BASE_URL}images/radiant.png` },
+  { name: "Oval", image: `${import.meta.env.BASE_URL}images/oval.png` },
+  { name: "Pear", image: `${import.meta.env.BASE_URL}images/pear.png` },
+  { name: "Heart", image: `${import.meta.env.BASE_URL}images/heart.png` },
 ];
 
 const DiamondShapes = () => {

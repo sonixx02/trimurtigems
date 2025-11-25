@@ -15,7 +15,7 @@ const DiamondModel = ({ shape, modelPath, materialProps }) => {
   const [model, setModel] = useState(null);
 
   // Load the generic gemstone GLB file
-  const defaultModelPath = "/images/GemstoneAssets.glb";
+  const defaultModelPath = `${import.meta.env.BASE_URL}images/GemstoneAssets.glb`;
   const actualModelPath = modelPath || defaultModelPath;
   const { scene: originalScene } = useGLTF(actualModelPath);
 

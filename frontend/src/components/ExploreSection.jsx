@@ -4,15 +4,15 @@ import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { title: "Engagement Rings", image: "/images/EngagementRings.jpg", path: "/jewelry?category=Ring" },
-  { title: "Wedding Rings", image: "/images/wedingRings.png", path: "/jewelry?category=Ring" },
-  { title: "Diamonds", image: "/images/Diamonds.png", path: "/diamonds" },
-  { title: "Diamond Jewelry", image: "/images/DiamondJewelry.png", path: "/jewelry" },
-  { title: "Lab Grown Diamonds", image: "/images/labGrown.png", path: "/diamonds" },
-  { title: "Earrings", image: "/images/Earrings.png", path: "/jewelry?category=Earrings" },
-  { title: "Necklaces", image: "/images/Necklaces.png", path: "/jewelry?category=Necklace" },
-  { title: "Design Your Own", image: "/images/designurOwn.png", path: "/jewelry" },
-  { title: "All Jewelry", image: "/images/AllJewlery.png", path: "/jewelry" },
+  { title: "Engagement Rings", image: `${import.meta.env.BASE_URL}images/EngagementRings.jpg`, path: "/jewelry?category=Ring" },
+  { title: "Wedding Rings", image: `${import.meta.env.BASE_URL}images/wedingRings.png`, path: "/jewelry?category=Ring" },
+  { title: "Diamonds", image: `${import.meta.env.BASE_URL}images/Diamonds.png`, path: "/diamonds" },
+  { title: "Diamond Jewelry", image: `${import.meta.env.BASE_URL}images/DiamondJewelry.png`, path: "/jewelry" },
+  { title: "Lab Grown Diamonds", image: `${import.meta.env.BASE_URL}images/labGrown.png`, path: "/diamonds" },
+  { title: "Earrings", image: `${import.meta.env.BASE_URL}images/Earrings.png`, path: "/jewelry?category=Earrings" },
+  { title: "Necklaces", image: `${import.meta.env.BASE_URL}images/Necklaces.png`, path: "/jewelry?category=Necklace" },
+  { title: "Design Your Own", image: `${import.meta.env.BASE_URL}images/designurOwn.png`, path: "/jewelry" },
+  { title: "All Jewelry", image: `${import.meta.env.BASE_URL}images/AllJewlery.png`, path: "/jewelry" },
 ];
 
 const ExploreSection = () => {

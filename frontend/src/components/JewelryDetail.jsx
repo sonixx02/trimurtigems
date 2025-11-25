@@ -40,7 +40,7 @@ const Model = ({ url, scale = 1, position = [0, 0, 0] }) => {
 const DiamondModel = ({ shape: shapeProp, materialProps }) => {
   const modelRef = useRef();
   const [model, setModel] = useState(null);
-  const { scene: originalScene } = useGLTF("/images/GemstoneAssets.glb");
+  const { scene: originalScene } = useGLTF(`${import.meta.env.BASE_URL}images/GemstoneAssets.glb`);
 
   const texture = useLoader(
     RGBELoader,
