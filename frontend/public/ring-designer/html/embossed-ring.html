@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html class=" js no-mobile desktop no-ie en-section en-tools-section en-tools-embossedring-section w-1920 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 gt-1440 gt-1680 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded" lang="en" prefix="fb: http://www.facebook.com/2008/fbml" id="index-page">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>
+
+        Embossed ring
+
+</title>
+
+
+
+    <meta name="description" property="og:description" content="Create an embossed ring on Jweel!">
+    <meta property="og:title" content="Create your own unique ring in seconds.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="../static/img/jewels/JweelRing.jpg"><!-- TODO: changer l'image -->
+
+
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../static/css/base.css">
+<link rel="stylesheet" type="text/css" href="../static/css/class.css">
+
+    <style>
+
+            #menu-signed { display:none; }
+
+    </style>
+
+<style>
+    .file-mgmt {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .file-mgmt button {
+        width: 44px;
+        height: 44px;
+        margin: 2px;
+    }
+</style>
+<link href="../static/css/keys.css" rel="stylesheet" type="text/css">
+
+<link href="../static/css/embossedring.css" rel="stylesheet" type="text/css">
+
+    <script src="../static/js/headjs/head.min.js"></script>
+    <script src="../static/js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../static/js/jquery/jquery-ui.js"></script>
+    <script src="../static/js/jquery/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="../static/js/site/bootbox.min.js"></script>
+    <script src="../static/js/bs/bootstrap.min.js"></script>
+    <script src="../static/js/bs/bootstrap-select.min.js"></script>
+    <script src="../static/js/site/imageManager.min.js"></script>
+    <script src="../static/js/site/jweel.min.js"></script>
+    <script src="../static/js/site/ajax.min.js"></script>
+    <script src="../static/js/site/bowser.min.js"></script>
+    <script src="../static/js/site/account.min.js"></script>
+    <script src="../static/js/site/custom.js"></script>
+    <script src="https://www.jweel.com/html/cdn.webglstats.com/stat.js" defer="defer" async="async"></script>
+<script type="text/javascript" src="../static/js/fontdetect/fontdetect.2.2.min.js"></script>
+
+    <script type="text/javascript" src="../static/js/bs/bootstrap-filestyle.min.js"> </script>
+<script type="text/javascript" src="../static/js/snap/snap.svg.js"></script>
+<script type="text/javascript" src="../static/js/canvg-1.3/canvg.js"></script>
+<script type="text/javascript" src="../static/js/canvg-1.3/rgbcolor.js"></script>
+<script type="text/javascript" src="../static/js/canvg-1.3/StackBlur.js"></script>
+
+
+    <style type="text/css">.dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1 !important}.dg.main:hover .close-button,.dg.main .close-button.drag{opacity:1}.dg.main .close-button{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear;border:0;position:absolute;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-x:hidden}.dg.a.has-save ul{margin-top:27px}.dg.a.has-save ul.closed{margin-top:0}.dg.a .save-row{position:fixed;top:0;z-index:1002}.dg li{-webkit-transition:height 0.1s ease-out;-o-transition:height 0.1s ease-out;-moz-transition:height 0.1s ease-out;transition:height 0.1s ease-out}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;overflow:hidden;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid rgba(0,0,0,0)}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li > *{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .c{float:left;width:60%}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:9px}.dg .c select{margin-top:5px}.dg .cr.function,.dg .cr.function .property-name,.dg .cr.function *,.dg .cr.boolean,.dg .cr.boolean *{cursor:pointer}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0px 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco, monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px 'Lucida Grande', sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px 4px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2fa1d6}.dg .cr.number input[type=text]{color:#2fa1d6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.function:hover,.dg .cr.boolean:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2fa1d6}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}
+</style>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <div class="menu-header">
+
+
+
+<nav id="main-nav" class="navbar menu-header" role="navigation">
+    <div class="logo pull-left"><a href="https://www.jweel.com/index.html" class="standard">Jweel</a></div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ul">
+        <span class="sr-only">Browse</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <ul class="nav collapse navbar-collapse navbar-nav pull-right " id="navbar-ul">
+
+
+
+        <li>
+            <a href="tools.html" title="Créer un nouveau bijou en 3D !">Create</a>
+        </li>
+        <!--
+        <li>
+            <a href="http://www.jweel.com/en/models" title="Tous les modèles" >Browse</a>
+        </li>
+        <li>
+            <a href="/en/shops/create/" title="Vendez vos créations sur Jweel !">Sell</a>
+        </li>
+        -->
+        <li class="dropdown more-dropdown">
+            <a href="embossed-ring.html" class="dropdown-toggle" data-toggle="dropdown" title="A propos">About <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="faq.html" title="La FAQ">FAQ</a></li>
+                <!-- <li><a href="http://www.jweel.com/en/materials" title="Les matériaux">Materials</a></li> -->
+                <!-- <li><a href="http://www.jweel.com/en/blog" title="Le blog">Blog</a></li> -->
+                <li><a href="press.html" title="Presse">Press review</a></li>
+                <!--
+                <li>
+                    <a href="/en/giftvoucher" title="Offrez un chèque-cadeau Jweel !" style="color:red;">Gift-voucher</a>
+                </li>
+                -->
+                <li><a rel="nofollow" href="https://www.flickr.com/photos/122582706@N06/sets/72157643572331354/" title="Photos" target="_blank">Pictures</a></li>
+                <li><a href="about.html" title="À propos de Jweel">About Jweel</a></li>
+                <!--
+                <li class="divider"></li>
+                <li><a rel="nofollow" href="http://www.facebook.com/jweelWorld" title="Facebook"><i class="icon-fb"></i>&nbsp;&nbsp;Facebook</a></li>
+                <li><a rel="nofollow" href="https://www.pinterest.com/jweelworld/" title="Pinterest"><i class="icon-pin"></i>&nbsp;&nbsp;Pinterest</a></li>
+                <li><a rel="nofollow" href="https://twitter.com/JweelWorld" title="Twitter"><i class="icon-tw"></i>&nbsp;&nbsp;Twitter</a></li>
+                -->
+            </ul>
+        </li>
+        <!--
+        <li class="dropdown cart-dropdown">
+        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cart"></i> <span class="cartprice">0€</span> <span class="badge nb-cart-items"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dynamic"><p>Votre panier est vide.</p></li>
+
+
+                <li class="dynamic">
+                    <button type="button" class="btn order-trigger" disabled="">Order</button>
+                </li>
+
+                <hr class="dynamic">
+
+                <li><button type="button" class="btn" action="./tools.html">Design</button></li>
+            </ul>
+        </li>
+        -->
+        <li id="menu-unsigned">
+            <button type="button" id="connect-popup-trigger" class="btn" onclick="displayEndOfService()">Sign in</button>
+            <button type="button" class="btn btn-white" onclick="displayEndOfService()">Register</button>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</nav>
+
+            </div>
+            <div id="content">
+
+    <div id="end-of-service-display" class="fullsize-shadow" style="display: none;">
+      <div class="popup" style="height:430px;max-width:1024px;">
+          <div style="text-align:center" class="box-title">
+              <img style="float:unset;" alt="jweel logo" src="../static/img/logo/jweel.png">
+          </div>
+          <h2><b> End of Jweel services </b></h2>
+          <p style="text-align:left">Following personnal opportunities for Jweel founders, and no one to continue Jweel maintenance, the Jweel adventure is now over. Many thanks to all our customers and designers, who trusted us during the few years of service.</p>
+           <p style="text-align:left"><b>With more than 12 000 designs shared 3000 times, we are happy that we could help our 29 000 users to express their creativity.</b></p>
+          <p style="text-align:left">On demand manufacturing is closed, but we have opened the applications and they are now accessible for free! You can save design files, and export to 3D standard format for manufacturing, enjoy!</p>
+          <p style="color:red;">Warning : all account owners should save their models as soon as possible, since we may have to clean our whole database soon.</p>
+          <p style="color:#002e32;text-align:left">If you have any question regarding our technologies, or the Jweel story, feel free to contact us personnally or using contact[at]jweel.com, We would be glad to share our experience and help you with your projects :)</p>
+          <button type="button" class="btn btn-blue" id="fadeout-end-of-service">OK</button>
+      </div>
+    </div>
+
+
+<section class="creation-section">
+    <div class="box-creation">
+
+
+
+<div class="vertical-contents box-creation">
+    <div class="content">
+        <h2>Embossed ring</h2>
+    </div>
+    <div class="content">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#collapseOne">
+                    <h4 class="panel-title">
+                        File
+                        <i data-toggle="popover" data-content="Save, copy, share or reset your creation" class="pull-right icon-question icon-right" data-original-title="" title=""></i>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse">
+                    <div class="panel-body">
+                        <div id="file-button-list" class="col-md-12" style="margin:0px; padding:0px;">
+
+                            <button type="button" data-container="body" class="save-file-trigger btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" disabled="" data-original-title="Save">
+                                <img src="../static/img/btn/IconSave.png" alt="Add a ring">
+                            </button>
+
+                            <button type="button" data-container="body" class="load-file-trigger btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" disabled="" data-original-title="Load">
+                                <img src="../static/img/btn/IconLoadFile.png">
+                            </button>
+                            <input id="load-file-input" type="file" accept=".jweel" style="display: none;">
+
+                            <!--
+
+                            <button id="copy-file" data-container="body" type="button" class="btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html='true' title='Save as' disabled>
+                                <img src="../static/img/btn/IconSaveAs.png" alt="Save your ring" >
+                            </button>
+                            <button id="new-file" data-container="body" type="button" class="btn action-button shortcut-tooltip" data-toggle="tooltip" data-html='true' title='New object'>
+                                <img src="../static/img/btn/IconNewFile.png" alt="New object" >
+                            </button>
+                            <button id="publish-file" data-container="body" type="button" class="btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html='true' title='Publish your object in the gallery' disabled>
+                                <img src="../static/img/btn/IconShare.png" alt="Publish your object" >
+                            </button>
+
+                            -->
+                        </div>
+                        <button id="saving-button" class="btn btn-dark col-md-11" style="display:none;" disabled="">
+                            <img src="../static/img/elt/loading.gif" style="width:25px;height:25px;" alt="loading"> Saving...
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                    <h4 class="panel-title">
+                        Engraved ring
+                        <i data-toggle="popover" data-content="Your ring parameters" class="pull-right icon-question icon-right" data-original-title="" title=""></i>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <img id="relief-preview" src="data:image/png;base64,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">
+                        <button class="btn btn-blue show-panel" style="width:100%;">Edit relief</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <div class="box-creation box-right vertical-center-right">
+
+
+
+<div id="cart-content" class="content">
+    <label><b>Select a material:</b></label>
+    <select id="select-material" name="select-material" style="display: none;">
+        <option value="silver" selected="">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="bronze">Bronze</option>
+        <option value="brass">Brass</option>
+        <option value="hdss">Steel</option>
+        <option value="titanium">Titanium</option>
+    </select>
+    <div id="select-finish-display">
+        <label><b>Select a finish:</b></label>
+    </div>
+
+    <label><b>Select a ring size:</b></label>
+    <a href="embossed-ring.html" class="size-guide-trigger" data-toggle="modal" data-target="#sizeguide"><i class="icon-question" data-original-title="" title=""></i>&nbsp;Size explanation</a>
+    <div class="range-container">
+        <div class="range-value">54mm</div>
+        <div class="range range-size ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="embossed-ring.html" style="left: 60.5263%;"></a></div>
+    </div>
+
+
+    <!--
+    <div class="price text-right">
+        <small>No price available</small>
+    </div>
+
+    <div class="shipment text-right"></div>
+    -->
+    <span class="bounding-box-info text-right" style="visibility: hidden;"><b class="size-info"></b></span>
+    <span class="bounding-box-info size-guide-trigger text-right" style="visibility: hidden;"><b><span class="dim-x">00.00</span> x <span class="dim-y">00.00</span> x <span class="dim-z">00.00</span>mm</b></span>
+
+        <button type="button" class="btn btn-block btn-blue surface-show-hook" id="export-obj" disabled="">Export to OBJ</button>
+
+    <!--
+    <button type="button" class="btn btn-block btn-blue add-cart-trigger surface-show-hook action-on-click" disabled>Add to cart</button>
+    <button type="button" class="save-file-trigger btn btn-block btn-dark save-creation-trigger surface-show-hook" disabled><span class="icon-save pull-left"></span>&nbsp;Save</button>
+    -->
+
+</div>
+
+
+    </div>
+
+
+
+    <div id="webgl">
+
+    <canvas id="viewerCanvas" width="1920" height="860" tabindex="0" contenteditable="true" style="width: 1920px; height: 860px; visibility: visible;"></canvas>
+        <div class="box-generating no-select" style="display: none;"><a id="box-generating" href="embossed-ring.html" class="error" style="display: none;"></a></div>
+    </div>
+
+    <div class="alert alert-bottom alert-success fade in" style="bottom:20px;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <p style="text-align:center">Want to hire a designer? Contact us at contact[at]jweel.com</p>
+    </div>
+
+    <div class="hand-buttons">
+        <!--<button class="btn action-button btn-hand btn-hand-left"><img alt="jweel hand" src="../static/img/btn/hand_icon_white.png"/></button>-->
+        <button class="btn action-button btn-hand btn-hand-right"><img alt="jweel hand" src="../static/img/btn/hand_icon_white.png"></button>
+    </div>
+
+</section>
+
+
+
+
+
+<div id="sizeguide" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">How to get my ring size?</h4>
+      </div>
+      <div class="modal-body">
+        <!-- accordion" -->
+
+        <p style="margin:20px;">Here are three ways to get your ring size.</p>
+        <div class="panel-group" id="csg">
+          <div class="panel panel-default">
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg1" data-parent="#csg">
+              <h4 class="panel-title">Method 1: with a string</h4>
+            </div>
+            <div id="csg1" class="panel-collapse collapse">
+                <img class="img-thumbnail" style="margin: 20px;" alt="taille de doigt" src="../static/img/pics/sizeguide.jpg">
+                <ol>
+                    <li>Take a string or a piece of paper.</li>
+                    <li>Wrap it around your finger (make sure the string glides easily).</li>
+                    <li>Use a pen to mark the spot where the string joins.</li>
+                    <li>Measure the string with a ruler (mm).</li>
+                </ol>
+            </div>
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg2" data-parent="#csg">
+              <h4 class="panel-title">Method 2: with one of your rings</h4>
+            </div>
+            <div id="csg2" class="panel-collapse collapse">
+                <img class="img-thumbnail" style="margin: 20px;" alt="taille de doigt" src="../static/img/pics/sizeguide2.png">
+                <ol>
+                    <li>Take one of your rings.</li>
+                    <li>Measure (mm) the inner diameter of the ring with a ruler.</li>
+                    <li>Multiply by 3.14</li>
+                </ol>
+            </div>
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg3" data-parent="#csg">
+              <h4 class="panel-title">Method 3: from your jewelry known ring size</h4>
+            </div>
+            <div id="csg3" class="panel-collapse collapse">
+                <p style="margin:20px;">If you already know your ring size in a specific jewelry standard, use the following table to convert it back to mm.</p>
+                <img class="img-thumbnail" style="width:100%;" alt="conversions" src="../static/img/pics/sizeguide3-en.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="fullsize-shadow embossed-panel-shadow" id="popup-embossed-panel" style="display:block;">
+    <div class="popup embossed-panel">
+        <div class="relief">
+            <h4>Ring relief</h4>
+            <label class="resolution">
+                <i data-toggle="popover" data-content="Change the embossing pattern of your ring here. Black elements will be engraved, white elements will be embossed. See the tutorial for more details. " class="icon-question" data-original-title="" title=""></i>
+            </label>
+            <svg id="map-view-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780px" height="256px">
+            <div class="load-image">
+                <input type="file" class="filestyle" data-buttonname="btn btn-light" data-input="false" data-badge="false" data-classicon="icon-plus" data-buttontext="  Add an image" id="embossedring-pic" accept="image/*" style="width: 256px;" />
+                <div class="checkbox" style="display:none">
+                    <label>
+                        <input class="whitetoalpha" type="checkbox"> Convert white pixels into transparent pixels
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-light add-text">Add text</button>
+            <label style="font-weight: normal;">
+                (Res.  &nbsp;<span id="recommanded-res">383 x 52</span>)
+                <i data-toggle="popover" data-content="If you plan to import an image covering the full band of your ring, this is the best resolution. NB: details must be at least 4 pixels thick to ensure visibility on the final ring." class="icon-question" style="opacity:0.7" data-original-title="" title=""></i>
+            </label>
+            <button class="btn btn-light cancel-edit-trigger">Cancel</button>
+            <button class="btn btn-blue create-ring-trigger">Design my ring</button>
+        </div>
+        <div class="ringparams">
+            <h4 id="tip-ringparams" style="text-align: center;margin-top: 50px;opacity:0.6;">Click on an image in the edit zone to change its appearance</h4>
+            <div id="elements-actions" class="relief-container" style="display:none">
+                <label>Actions</label><br>
+                <button id="delete-element" data-container="body" type="button" class="btn action-button small-action-button shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Delete the selection">
+                    <img src="../static/img/btn/IconTrashBin.png" alt="Delete the selection">
+                </button>
+                <button id="copy-element" data-container="body" type="button" class="btn action-button small-action-button shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Duplicate the selection">
+                    <img src="../static/img/btn/IconCopyElement.png" alt="Duplicate the selection">
+                </button>
+                <div class="left-vertical-line">
+                <button id="miror-horizontal" data-container="body" type="button" class="btn action-button small-action-button shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Flip selection horizontaly ">
+                    <img src="../static/img/btn/IconMirorH.png" alt="Flip selection horizontaly ">
+                </button>
+                <button id="miror-vertical" data-container="body" type="button" class="btn action-button small-action-button shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Flip selection verticaly">
+                    <img src="../static/img/btn/IconMirorV.png" alt="Flip selection verticaly">
+                </button>
+                </div>
+                <div class="left-vertical-line">
+                <button id="clear-white" data-container="body" type="button" class="btn action-button small-action-button shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Clear the selection from all white pixels (For black on white images only)">
+                    <img src="../static/img/btn/IconClearWhite.png" alt="Clear the selection from all white pixels (For black on white images only)">
+                </button>
+                </div>
+
+            </div>
+            <div id="text-el-box" class="relief-container" style="display: none;">
+                <label>Text and font</label><br>
+                <div class="col-md-6" style="padding-left: 0px;">
+                    <input id="curr-text-val" type="text" value="" class="form-control text-jewel action-on-click" style="height: 38px;margin-top: 2px;line-height: 38px;" onchange="window.elementTextChange">
+                </div>
+                <div id="picker-click-trigger" class="col-md-6" style="padding-right: 0px;">
+                    <select id="select-font" name="select-font" class="action-on-click" data-container="body" style="display: none;">
+                        <option value="Verdana">Verdana</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Norican" style="font-family: Norican, Symbols;">Norican</option>
+                        <option value="Neon" style="font-family: Neon, Symbols;">Neon</option>
+                        <option value="Warnes" style="font-family: Warnes, Symbols;">Warnes</option>
+                        <option value="Hardman" style="font-family: Hardman, Symbols;">Hardman</option>
+                        <option value="Alewis" style="font-family: Alewis, Symbols;">Alewis</option>
+                        <option value="Flatline" style="font-family: Flatline, Symbols;">Flatline</option>
+                        <option value="Handlee" style="font-family: Handlee, Symbols;">Handlee</option>
+                        <option value="Rochester" style="font-family: Rochester, Symbols;">Rochester</option>
+                        <option value="Remarcle" style="font-family: Remarcle, Symbols;">Remarcle</option>
+                        <option value="MrBedfort" style="font-family: MrBedfort, Symbols;">MrBedfort</option>
+                        <option value="Pacifico" style="font-family: Pacifico, Symbols;">Pacifico</option>
+                        <option value="Parisienne" style="font-family: Parisienne, Symbols;">Parisienne</option>
+                        <option value="Yesteryear" style="font-family: Yesteryear, Symbols;">Yesteryear</option>
+                        <option value="AmaticsSC" style="font-family: AmaticsSC, Symbols;">Amatics SC</option>
+                        <option value="BerkshireSwash" style="font-family: BerkshireSwash, Symbols;">Berkshire Swash</option>
+                        <option value="ClickerScript" style="font-family: ClickerScript, Symbols;">ClickerScript</option>
+                        <option value="Damion" style="font-family: Damion, Symbols;">Damion</option>
+                        <option value="Engagement" style="font-family: Engagement, Symbols;">Engagement</option>
+                        <option value="IndieFlower" style="font-family: IndieFlower, Symbols;">IndieFLower</option>
+                        <option value="LeagueScript" style="font-family: LeagueScript, Symbols;">LeagueScript</option>
+                        <option value="LovedByTheKing" style="font-family: LovedByTheKing, Symbols;">LovedByTheKing</option>
+                        <option value="Molle" style="font-family: Molle, Symbols;">Molle</option>
+                        <option value="Qwigley" style="font-family: Qwigley, Symbols;">Qwigley</option>
+                        <option value="ReenieBeanie" style="font-family: ReenieBeanie, Symbols;">ReeneBeanie</option>
+                        <option value="RockSalt" style="font-family: RockSalt, Symbols;">Rocksalt</option>
+                        <option value="TheGirlNextDoor" style="font-family: TheGirlNextDoor, Symbols;">TheGirlNextDoor</option>
+                        <option value="Yellowtail" style="font-family: Yellowtail, Symbols;">Yellowtail</option>
+                    </select>
+                </div>
+            </div>
+            <div id="text-el-box" class="relief-container" style="display: none;">
+
+            </div>
+            <div id="relief-balance" class="relief-container">
+                <label>Relief amplitude</label><br>
+                <svg id="grey-levels-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="25px"></svg>
+            </div>
+        </div>
+        <div class="ringcut">
+            <h4>Ring section (size 54)<i data-toggle="popover" data-content="Dimensions are valid for a standard ring - size 54. For other sizes, dimensions will be adapted to ensure the pattern proportions." class="pull-right icon-question icon-right" data-original-title="" title=""></i></h4>
+            <svg id="slice-view-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100px" width="255">
+            <div class="left-vertical-line" style="margin-left:10px;padding-left:10px">
+                <label>Templates :</label>
+                <br>
+                <button class="tempbtn" id="cut-preset0" type="button">
+                    <img data-desc="Domed and rounded ring" link="../static/img/jewels/EmbossedPreset0.jpg" src="../static/img/btn/EmbossedPreset0.png" width="80px">
+                </button>
+                <br>
+                <button class="tempbtn" id="cut-preset1" type="button">
+                    <img data-desc="Slightly domed ring" link="../static/img/jewels/EmbossedPreset1.jpg" src="../static/img/btn/EmbossedPreset1.png" width="80px">
+                </button>
+                <br>
+                <button class="tempbtn" id="cut-preset2" type="button">
+                    <img data-desc="Larger, almost flat ring" link="../static/img/jewels/EmbossedPreset2.jpg" src="../static/img/btn/EmbossedPreset2.png" width="80px">
+                </button>
+                <br>
+                <button class="tempbtn" id="cut-preset3" type="button">
+                    <img data-desc="Larger, flat ring" link="../static/img/jewels/EmbossedPreset3.jpg" src="../static/img/btn/EmbossedPreset3.png" width="80px">
+                </button>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="connect-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height: 340px;">
+    <form id="connect-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <div style="position: absolute; top: 0; right: 0; text-align:right; padding-right: 10px;">
+            <h2>Sign in!</h2><br>
+            <a id="to-register-trigger" style="display:inline-block;" href="embossed-ring.html">Not registered yet?</a><br>
+            <span class="error"></span>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="login-email">E-mail Address</label>
+        <input type="email" class="form-control" id="login-email" name="email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" class="form-control" id="login-password" name="password" placeholder="Mot de passe" required="">
+        <a id="reset-popup-trigger" href="embossed-ring.html">forgotten your password?</a>
+      </div>
+      <button type="submit" id="connect-form-trigger" class="btn btn-blue">Sign in</button>
+    </form>
+  </div>
+</div>
+
+<div id="register-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height:360px;">
+    <form id="register-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <div style="position: absolute; top: 0; right: 0; text-align:right; padding-right: 10px;">
+            <h2>Register !</h2><br>
+            <span class="error"></span><br>
+            <a id="to-connect-trigger" style="display:none;" href="embossed-ring.html">Sign in!</a>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="register-email">E-mail Address</label>
+        <input type="email" class="form-control" id="register-email" name="email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" class="form-control" id="register-password" name="password" placeholder="Mot de passe" required="" aria-autocomplete="list">
+      </div>
+      <div class="checkbox">
+        <label>
+            <input type="checkbox" required=""> I accept the <a target="_blank" href="terms.html">terms and conditions of Jweel</a>
+        </label>
+      </div>
+        <button type="submit" id="register-form-trigger" class="btn btn-blue">Join</button>
+    </form>
+  </div>
+</div>
+
+<div id="reset-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height:260px;">
+    <form id="reset-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <h2 style="font-size:20px; margin-top:5px;">Retrieve your account</h2>
+          <span class="error"></span>
+      </div>
+      <div class="form-group">
+        <label for="reset-email">E-mail Address</label>
+        <input type="email" class="form-control" id="reset-email" name="reset-email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <button type="submit" id="reset-form-trigger" class="btn btn-blue">Send me an retrieval email</button>
+    </form>
+  </div>
+</div>
+
+
+
+        <!-- load js libs at the end of the document (for speed) -->
+
+
+
+
+    <script>
+        window.media = "http://www.jweel.com";
+        window.base_url = "http://www.jweel.com";
+        window.base_lang_url = "http://www.jweel.com/en";
+        window.static_url = "../static";
+
+        // Rewrite for local hack
+        window.media = "..";
+        window.base_url = "http://www.jweel.com";
+        window.base_lang_url = "http://www.jweel.com/en";
+        window.static_url = "../static";
+
+        window.lang = "en";
+
+        window.geo = {
+            "city"        : "GRENOBLE",
+            "country"     : "FR",
+            "zipcode"     : "",
+            "citylatlong" : "45.188529,5.724524",
+        }
+        window.currency_symbol = "€";
+    </script>
+
+
+        <script src="../static/js/djangojs.js"></script>
+        <script>
+            window.gettext=function(s){
+                if(djangojs_dic[s]){
+                    return djangojs_dic[s];
+                }else{
+                    return s;
+                }
+            }
+        </script>
+
+    <script>
+        window.cartData = new CartManager();
+
+        $("img.lazy").lazyload({
+            threshold : 400,
+            effect : "fadeIn",
+            skip_invisible : false
+        });
+    </script>
+
+<script>
+    window.userMsgs = {};
+
+    window.userMsgs.defaultError = function() {
+        bootbox.alert("Sorry, an unknown error occured. In order to improve the quality of our services, this event has been registered.");
+    };
+
+    window.userMsgs.needToBeRegisteredMsgError = function () {
+        bootbox.dialog({
+            message: 'Vous devez être utilisateur de jweel pour effectuer cette action.\n Voulez-vous vous inscrire?',
+            title: 'You need to sign in',
+            buttons: {
+                cancel: {
+                    label: 'Cancel',
+                    className: "btn btn-blue",
+                    callback: function() {
+                    }
+                },
+                connect: {
+                    label: 'Sign in',
+                    className: "btn btn-blue",
+                    callback: function() {
+                        showConnectPopup();
+                    }
+                },
+                register: {
+                    label: 'Register',
+                    className: "btn btn-blue",
+                    callback: function() {
+                        showRegisterPopup();
+                    }
+                }
+            }
+        });
+    };
+
+    window.userMsgs.customErrorMsg = function (msg) {
+        if (msg===undefined || msg==="") {
+            window.userMsgs.defaultError();
+        } else {
+            bootbox.alert(msg);
+        }
+    };
+
+    window.getThumb = function( file ) {
+        var base = 'http://www.jweel.com/img/';
+
+        if( file.thumb_small ) {
+            return base + JSON.parse(file.thumb_small)['key'];
+        }
+        else if( file.thumb ) {
+            return base + JSON.parse(file.thumb)['key'];
+        }
+        else {
+            return "#";
+        }
+    }
+
+    window.onload = function() {
+        $("#connect-form").submit(login);
+        $("#register-form").submit(
+            function(e) {
+                $('#register-form-trigger').attr('disabled', true);
+                register(e);
+                e.preventDefault();
+                return false;
+            }
+        );
+        $("#reset-form").submit(reset);
+        $('.cartitem-delete').click(window.cartData.instanciateCartDel())
+        $('.order-trigger').click(function() {
+            location.href = window.base_lang_url + "/checkout/";
+        });
+
+
+
+
+        window.resolveZipCode();
+
+    };
+</script>
+
+<script type="text/javascript" src="../static/js/site/ajax.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery/jquery.knob.js"></script>
+<script type="text/javascript">
+
+window.downloadFile = function( blob , filename, ext) {
+    var a = document.createElement('a');
+    a.href = window.URL.createObjectURL(blob);
+    var ext = ext ? ext : ".obj";
+    if(filename){
+        a.download = filename+ext;
+    }else{
+        a.download = ""+ext;
+        if(a.download === ext){
+            if(window.fileData.getFileName() !== ""){
+                a.download = window.fileData.getFileName();
+            }
+        }
+    }
+    if(a.download === ext){a.download = "model"+ext;}
+
+    // simulate a click on the link
+    if (document.createEvent) {
+        var event = document.createEvent("MouseEvents");
+        event.initEvent("click", true, true);
+        a.dispatchEvent(event);
+    } else {
+        a.click();
+    }
+};
+
+$('#export-obj').click(function() {
+    $('#export-obj').text("Exporting...");
+    $('#export-obj').prop("disabled",true);
+    var mat = new THREE.Matrix4();
+    var callback = function(blob , filename, ext){
+        window.downloadFile(blob , filename, ext);
+        $('#export-obj').prop("disabled",false);
+        $('#export-obj').text("Export to OBJ");
+    };
+    if(window.jweelTool.getToolType() === "embossedring" || window.jweelTool.getToolType() === "stylering"){
+        console.log("... Scaling according to size.");
+        var s = $('.range').slider('value');
+        mat.scale(new THREE.Vector3(s/54, s/54,s/54));
+        window.jweelTool.exportMesh(callback, mat);
+    }else{
+        window.jweelTool.exportMesh(callback);
+    }
+});
+
+
+window.cartSelect = new CartSelectManager ($('#select-material'), $('#select-finish-display'));
+
+window.donePostInit = function (tool){
+    // Set the default material
+
+
+    // ensure materials initialisation will be run when cartselect will be initialized
+    window.cartSelect.runWhenInitialized( function() {
+        console.log("runWhenInitialized called");
+
+        //if( !window.cartSelect.finishSelect[material]) {
+        //    window.location.reload();
+        //}
+
+        // select pickers for mat and finish decides the skim material
+        var material = window.cartSelect.matSelect.val();
+        var finish = window.cartSelect.finishSelect[material].val();
+        tool.loadMaterial(material, finish);
+
+        window.cartSelect.addChangeFunction(function () {
+            var material = window.cartSelect.matSelect.val();
+            var finish = window.cartSelect.finishSelect[material].val();
+            tool.loadMaterial(material, finish);
+        });
+    });
+
+   // Set default material for Jweel
+    skim.instances.modeler.sceneManager.setSurfaceMaterial(
+        skim.gl_materials["Uniform Physical Material"].get(function(attrs){})
+    );
+};
+
+window.launchTool = function (tool, callback) {
+
+
+
+    window.fileData = new FileManager(tool);
+    window.cartData.setFileData(window.fileData);
+
+
+
+    callback();
+    // Launch the init
+    tool.init();
+
+    $('.save-file-trigger').click(window.fileData.instanciateSave());
+    //$("#copy-file").click(window.fileData.instanciateCopy());
+    //$("#publish-file").click(window.fileData.instanciatePublish());
+    //$("#new-file").click(window.fileData.instanciateResetEverything());
+    //$('.add-cart-trigger').click( window.cartData.instanciateAddToCart());
+
+    $('#load-file-input').hide();
+    $('.load-file-trigger').click(function(){
+            $('#load-file-input').click();
+        }
+    );
+    $('#load-file-input').change(function(evt) {
+        var files = evt.target.files; // FileList object
+
+        // split extension and filename
+        var tags = files[0].name.split('.');
+        var name = "";
+        for(var i=0; i<tags.length-1; ++i){
+            name = name + tags[i];
+        }
+
+        var ext = "";
+        if(tags.length > 1){
+            ext = tags[tags.length-1];
+        }
+
+        var fr = new FileReader();
+        fr.onload = function(e) {
+            // e.target.result should contain the text
+            var json = JSON.parse(e.target.result);
+            if(json.tooltype === window.fileData.getToolType()){
+                skim.engine.reset();
+                window.fileData.setFileName(name);
+                tool.loadjsonInfo(json.jsonInfo);
+                tool.setToolInfo(JSON.parse(json.toolInfo));
+                tool.loadObject();
+            }else{
+                alert("Bad file format. Check that you gave a Jweel file and tried to load it using the adapted tool.");
+            }
+        };
+        fr.readAsText(files[0]);
+    });
+
+};
+
+window.update_object_data = function (volume, surface, aabb) {
+    window.fileData.updateObjectData(volume, surface, aabb);
+    //window.cartData.requestPriceData();
+};
+
+
+// init menu
+$('.icon-question').popover({
+    placement: 'right',
+    trigger: "hover",
+    container: 'body',
+    html: true,
+    delay: { show: 400, hide: 400 }
+});
+
+
+
+window.hideHand = function() {
+    $('.btn-hand').removeClass('active');
+    window.jweelTool.triggerEvent("hideHand");
+};
+
+$('.btn-hand').click(function() {
+    $(this).toggleClass('active');
+    window.jweelTool.triggerEvent($(this).hasClass('active') ? "showHand" : "hideHand");
+});
+
+</script>
+
+<script>
+
+
+// Useful function to DL text (great if you need to change the default svg/dataurl in Tool.js)
+//function download(filename, text) {
+//  var pom = document.createElement('a');
+//  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+//  pom.setAttribute('download', filename);
+//  pom.click();
+//}
+
+    $('.embossed-panel-shadow').off('click');
+
+    $('.show-panel').click(function() {
+        $('.embossed-panel-shadow').fadeIn();
+        window.jweelTool.saveCurrentToolInfo();
+    });
+
+
+    $('.cancel-edit-trigger').click(function() {
+        var changed = false;
+        var ti1 = window.jweelTool.getLastToolInfo();
+        var ti2 = window.jweelTool.getToolInfo();
+        var keys = Object.keys(ti1);
+        for(var i=0; i<keys.length; ++i){
+            changed = changed || (ti1[keys[i]] !== ti2[keys[i]]);
+        }
+        if(changed){
+            var r = bootbox.confirm("Vos modifications seront annulées. Etes vous sure de vouloir continuer ?", function(r) {
+                if( r ) {
+                    hidePopUp();
+                    window.jweelTool.resetToLastSavedToolInfo();
+                    window.updateMenu();
+                }
+            });
+        }else{
+            hidePopUp();
+        }
+    });
+
+    $('.add-text').click(function() {
+        var snap_txt = window.map_widget.addText("Abcde");
+        window.map_widget.select(snap_txt);
+    });
+
+    window.slice_widget = new RingSliceWidget({
+            svg_tag :   document.getElementById("slice-view-svg"),
+            size:       54,
+            rlength:    16,
+            zlength:    80,
+            round:      3,
+            bump:       7
+    });
+    window.setPresetSlice = (function() {
+        var presets = [
+            {rlength:12,zlength:60,round:6, bump:6},
+            {rlength:13,zlength:70,round:4, bump:5},
+            {rlength:16,zlength:80,round:4, bump:3},
+            {rlength:14,zlength:90,round:4, bump:0}
+        ];
+        return function(idx) {
+            window.slice_widget.setRingInfos(presets[idx]);
+        }
+    })();
+    $('#cut-preset0').click(function() {
+        window.setPresetSlice(0);
+    });
+    $('#cut-preset1').click(function() {
+        window.setPresetSlice(1);
+    });
+    $('#cut-preset2').click(function() {
+        window.setPresetSlice(2);
+    });
+    $('#cut-preset3').click(function() {
+        window.setPresetSlice(3);
+    });
+
+    window.map_widget = new RingMapWidget({
+            svg_tag :   document.getElementById("map-view-svg"),
+            ring_res:   {width:300,height:50},
+            border_res: 3
+    });
+
+    // Must be updated to tell if some widgets are sliding (meaning changing but
+    // not validated). It is used to know if we must update the toolinfo or wait
+    var sliding_widgets = {
+        slice:   false,
+        map:     false,
+        grey_lvls: false
+    };
+    window.areWidgetsSliding = function() {
+        var res = false;
+        var keys = Object.keys(sliding_widgets);
+        for(var i=0; i<keys.length; ++i) {
+            res = res || sliding_widgets[keys[i]];
+        }
+        return res;
+    }
+
+    // SetInterval to prevent updating to often (laggy)
+    var toolInfoNeedUpdate = false;
+    window.updateToolInterval = window.setInterval(function(){
+        if(toolInfoNeedUpdate && !window.areWidgetsSliding()){
+            window.map_widget.getAsyncRingMapDataURL(function(dataURL){
+
+                window.jweelTool.pushState();
+
+                var ring_infos = window.slice_widget.getRingInfos();
+                window.jweelTool.setToolInfo({
+                    size:       54,
+                    lambda:     window.jweelTool.getToolInfo().lambda,
+                    rlength:    ring_infos.rlength/10,
+                    zlength:    ring_infos.zlength/10,
+                    round:      ring_infos.round/10,
+                    bump:       ring_infos.bump/10,
+                    dataurl:    dataURL,
+                    svg:        window.map_widget.getMapSVG()
+                });
+            });
+            toolInfoNeedUpdate = false;
+        }
+    },60);
+    window.updateToolInfo = function() {
+        toolInfoNeedUpdate = true;
+    }
+    window.map_widget.addEventCallback(window.updateToolInfo, "map_changed");
+
+    window.updateToolInfoFromMenu = function() {
+        var ring_infos = window.slice_widget.getRingInfos();
+
+        // set the toolInfo from the menu
+        var fake_toolinfo = {
+            size:       54,
+            lambda:     window.jweelTool.getToolInfo().lambda,
+            rlength:    ring_infos.rlength/10,
+            zlength:    ring_infos.zlength/10,
+            round:      ring_infos.round/10,
+            bump:       ring_infos.bump/10
+        };
+        var ring_res = window.jweelTool.getBestImageResolution(fake_toolinfo);
+        window.map_widget.setRingInfos(ring_res.width,ring_res.height,ring_res.corners);
+        // Those last calls will trigger the event map_changed and call updateToolImage
+
+        document.getElementById('recommanded-res').innerHTML = 2*ring_res.width + " x " + 2*ring_res.height + " px";
+    };
+    window.sliceWidgetSlide = function() {
+        sliding_widgets.slice = true;
+        window.updateToolInfoFromMenu();
+    };
+    window.sliceWidgetChange = function() {
+        sliding_widgets.slice = false;
+        window.updateToolInfoFromMenu();
+    };
+    window.slice_widget.addEventCallback(window.sliceWidgetSlide, "ring_infos_slide");
+    window.slice_widget.addEventCallback(window.sliceWidgetChange, "ring_infos_change");
+
+    window.skimGenerateRing = function () {
+        $('#generate-trigger').text("Designing the ring");
+        $('#generate-trigger').append(jweelTool.loadingGif);
+        window.jweelTool.loadObject();
+    };
+
+    $('#generate-trigger,.create-ring-trigger').click(function() {
+        hidePopUp();
+        skim.instances.modeler.cameraMan.setPosition(window.jweelTool.defaultParams.init.initCamPos);
+        window.skimGenerateRing();
+    });
+    $('.surface-show-hook').prop('disabled',true);
+
+
+    window.loadHeightMapImage = function(evt) {
+        var files = evt.target.files; // FileList object
+
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+              continue;
+            }
+
+            var reader = new FileReader();
+
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                        var img = new Image();
+                        img.src = e.target.result;
+                        img.onload = function () {
+                            if($('.whitetoalpha').prop('checked')){
+                                window.clearWhiteOnImg(img,function(pro_img){
+                                    var snap_img = window.map_widget.addImage(pro_img);
+                                    window.map_widget.select(snap_img);
+                                });
+                            }else{
+                                var snap_img = window.map_widget.addImage(img);
+                                window.map_widget.select(snap_img);
+                            }
+                        };
+                };
+            })(f);
+
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+
+        var finput = $('#embossedring-pic');
+        finput.replaceWith( finput = finput.clone( true ) );
+    }
+
+    $('#embossedring-pic').change(window.loadHeightMapImage);
+    //$('#embossedring-pic').click(window.loadHeightMapImage);
+
+    window.updateMenu = function ()
+    {
+        var toolInfo = window.jweelTool.getToolInfo();
+
+        // Stop listening to ensure no call chain
+        window.map_widget.removeEventCallback(window.updateToolInfo, "map_changed");
+        window.slice_widget.removeEventCallback(window.sliceWidgetSlide, "ring_infos_slide");
+        window.slice_widget.removeEventCallback(window.sliceWidgetChange, "ring_infos_change");
+
+        skim.utils.assert(toolInfo.size == window.jweelTool.getToolInfo().size, "Error : should be the same");
+
+        $('.range-ringsize').slider('value', toolInfo.size);
+        $('.range-container .ringsize-span').text(toolInfo.size+'mm');
+
+        window.slice_widget.setRingInfos({
+            rlength: toolInfo.rlength*10,
+            zlength: toolInfo.zlength*10,
+            round: toolInfo.round*10,
+            bump: toolInfo.bump*10
+        });
+
+        var ring_res = window.jweelTool.getBestImageResolution(null);
+        window.map_widget.setRingInfos(ring_res.width,ring_res.height, ring_res.corners);
+        window.map_widget.setMapSVG(toolInfo.svg);
+
+        // Set dataurl image in the preview
+        document.getElementById("relief-preview").src = window.jweelTool.getToolInfo().dataurl;
+
+        document.getElementById('recommanded-res').innerHTML = ring_res.width + " x " + ring_res.height;
+
+        // Reconnect listening events
+        window.map_widget.addEventCallback(window.updateToolInfo, "map_changed");
+        window.slice_widget.addEventCallback(window.sliceWidgetSlide, "ring_infos_slide");
+        window.slice_widget.addEventCallback(window.sliceWidgetChange, "ring_infos_change");
+    };
+
+    window.done_surface = function () {
+        window.jweelTool.showSurface();
+        $('.surface-show-hook').prop('disabled',false);
+        window.jweelTool.progress.hide();
+        $('#generate-trigger').text("Design my ring");
+        $('.hand-buttons').show();
+    };
+
+    window.start_surface = function () {
+        $('.surface-show-hook').prop('disabled',true);
+        window.jweelTool.progress.show();
+        $('.hand-buttons').hide();
+        window.hideHand();
+    };
+
+    // Callbacks used in the jweelTool
+    var pageInterface = {
+        updateToolMenu   : window.updateMenu,
+        donePostInit     : window.donePostInit,
+        startSurface     : window.start_surface,
+        doneSurface      : window.done_surface,
+        updateObjectData : window.update_object_data
+    };
+
+    window.jweelTool = new site.EmbossedRingTool(
+        viewerCanvas,
+        site.toolModes.edit,
+        pageInterface
+    );
+
+    // Selected image panel-----------------------------------------------------
+    $('#tip-ringparams').show();
+    $('#clear-white').click(function() {
+        window.clearOriginalWhiteOnSelectedImg();
+        $('#clear-white').prop('disabled', true);
+    });
+    $('#copy-element').click(function() {
+        var snap_img = window.map_widget.getSelected();
+        var new_snap_img = window.map_widget.duplicateImage(snap_img);
+        window.map_widget.unselectAll();
+        window.map_widget.select(new_snap_img);
+    });
+    $('#miror-horizontal').click(function() {
+        var snap_img = window.map_widget.getSelected();
+        window.map_widget.mirrorImage(snap_img, "h", function(){
+                window.imgLvlMapper.setImgFromDataURL(snap_img.attr("jweel_original"));
+        });
+    });
+    $('#miror-vertical').click(function() {
+        var snap_img = window.map_widget.getSelected();
+        window.map_widget.mirrorImage(snap_img, "v", function(){
+                window.imgLvlMapper.setImgFromDataURL(snap_img.attr("jweel_original"));
+        });
+    });
+    $('#delete-element').click(function() {
+        var snap_el = window.map_widget.getSelected();
+        window.map_widget.removeElement(snap_el);
+    });
+    //
+
+    // Lelevl mapping for selected images --------------------------------------
+    window.grey_lvls_widget = new GreyLevelsWidget({
+            svg_tag :   document.getElementById("grey-levels-svg"),
+    });
+    $('.relief-container').hide();
+    window.imgLvlMapper = new ImageGreyLevelMapper();
+    window.mapElementSelected = function(event) {
+        $('#tip-ringparams').hide();
+        $('.relief-container').show();
+
+        var snap_el = event.el;
+
+        switch(snap_el.type){
+            case "image":
+                {
+                    $('#text-el-box').hide();
+
+                    if(snap_el.attr("jweel_original") === null){
+                        window.map_widget.setSnapElementAttr(event.el, {jweel_original:snap_el.attr("href")});
+                    }
+
+                    var img = new Image();
+                    img.src = snap_el.attr("jweel_original");
+                    img.onload = function() {
+                        window.imgLvlMapper.setImg(img);
+                        window.imgLvlMapper.clearAllMapping();
+                        if(snap_el.attr("jweel_greylevels") === null){
+                            window.imgLvlMapper.autoMappingFromImg();
+                        }else{
+                            window.imgLvlMapper.loadMapFromString(snap_el.attr("jweel_greylevels"));
+                        }
+
+                        window.grey_lvls_widget.clearPointers();
+                        var map = window.imgLvlMapper.getMap();
+                        for(var i=0; i<map.length; ++i){
+                            window.grey_lvls_widget.setPointer(map[i].from, map[i].to);
+                        }
+
+                        // decide to show the white removing option
+                        if(window.imgLvlMapper.getLevels(205,255) >0 &&
+                           window.imgLvlMapper.getLevels(0,205) >0){
+                            $('#clear-white').prop('disabled', false);
+                        }else{
+                            $('#clear-white').prop('disabled', true);
+                        }
+                    };
+                }
+            break;
+            case "text":
+                {
+                    $('#elements-actions').hide();
+
+                    $('#curr-text-val').val(snap_el.attr("text"));
+
+                    window.grey_lvls_widget.clearPointers();
+                    var str_col = snap_el.attr("fill");
+                    var lvl = 0;
+                    if(str_col[5] === ','){
+                        lvl = parseInt(str_col.substring(4,5));
+                    }else if(str_col[6] === ','){
+                        lvl = parseInt(str_col.substring(4,6));
+                    }else{
+                        lvl = parseInt(str_col.substring(4,7));
+                    }
+                    window.grey_lvls_widget.setPointer(lvl,lvl);
+                }
+            break;
+            default:
+                console.error("Error: unmanaged type");
+            break;
+        }
+
+
+    };
+    window.mapElementUnselected = function(event) {
+        $('.relief-container').hide();
+        $('#tip-ringparams').show();
+    };
+    window.map_widget.addEventCallback(window.mapElementSelected, "element_selected");
+    window.map_widget.addEventCallback(window.mapElementUnselected, "element_unselected");
+
+    window.grey_lvls_widget.slide = function(ptr) {
+        sliding_widgets.grey_lvls = true;
+        var snap_el = window.map_widget.getSelected();
+        switch(snap_el.type){
+            case "image":
+                window.imgLvlMapper.setLevelMapping(ptr.from,ptr.to);
+                window.map_widget.setSnapElementAttr(snap_el, {href:window.imgLvlMapper.getProcessedDataURL()});
+            break;
+            case "text":
+                window.map_widget.setSnapElementAttr(snap_el, {fill:window.grey_lvls_widget.convertNumberToColor(ptr.to)});
+            break;
+            default:
+                console.error("ERROR : unmanaged svg type");
+            break;
+        }
+    };
+    window.grey_lvls_widget.change = function(ptr) {
+        sliding_widgets.grey_lvls = false;
+        var snap_el = window.map_widget.getSelected();
+        switch(snap_el.type){
+            case "image":
+                window.map_widget.setSnapElementAttr(snap_el, {jweel_greylevels:window.imgLvlMapper.getMapAsString()});
+            break;
+            case "text":
+                // nothing to do
+            break;
+            default:
+                console.error("ERROR : unmanaged svg type");
+            break;
+        }
+    };
+
+    window.clearOriginalWhiteOnSelectedImg = function() {
+        var snap_img = window.map_widget.getSelected();
+        var img_trans_mgr = new ImageTransparencyManager(null);
+        img_trans_mgr.setTolerance(50);
+        img_trans_mgr.setFeather(10);
+        var img = new Image();
+        img.src = snap_img.attr("jweel_original");
+        img.onload = function() {
+            img_trans_mgr.setImg(img);
+            img_trans_mgr.clearColor(255,255,255);
+
+            window.map_widget.setSnapElementAttr(snap_img, {jweel_original:img_trans_mgr.getImgAsDataURL()});
+
+            // Levels managements must be cleared to prevent errors
+            var new_img = new Image();
+            new_img.src = snap_img.attr("jweel_original");
+            new_img.onload = function() {
+                window.imgLvlMapper.setImg(new_img);
+                window.imgLvlMapper.autoMappingFromImg();
+                window.map_widget.setSnapElementAttr(snap_img, {href:window.imgLvlMapper.getProcessedDataURL()});
+                window.grey_lvls_widget.clearPointers();
+                var map = window.imgLvlMapper.getMap();
+                for(var i=0; i<map.length; ++i){
+                    window.grey_lvls_widget.setPointer(map[i].from, map[i].to);
+                }
+            }
+        };
+    };
+
+    window.clearWhiteOnImg = function(img, callback) {
+        var img_trans_mgr = new ImageTransparencyManager(img);
+        img_trans_mgr.setTolerance(50);
+        img_trans_mgr.setFeather(10);
+        img_trans_mgr.clearColor(255,255,255);
+
+        var res = new Image();
+        res.src = img_trans_mgr.getImgAsDataURL();
+        res.onload = function() {
+            callback(res);
+        }
+    };
+
+    $('.whitetoalpha').change(function() {
+        if( $(this).prop('checked') ) {
+            console.log("converting white to transparent");
+        }
+        else {
+            // TODO MAX
+            console.log("converting transparent to white");
+        }
+    });
+    // End Level mapping code ----------------------------------------------------
+
+    // catch suppr keypress to delete selected image
+    document.onkeydown = function(e) {
+        if(document.getElementById("popup-embossed-panel").style.display !== "none"){
+            e = e || window.event;
+            var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+            var snap_el = window.map_widget.getSelected();
+            if(snap_el !== null){
+                switch(charCode) {
+                    case 46:
+                        window.map_widget.removeElement(snap_el);
+                    break;
+                    case 38: // arrowup
+                        window.map_widget.translateImage(snap_el,{x:0,y:-1});
+                    break;
+                    case 37: // arrowleft
+                        window.map_widget.translateImage(snap_el,{x:-1,y:0});
+                    break;
+                    case 39: // arrowright
+                        window.map_widget.translateImage(snap_el,{x:1,y:0});
+                    break;
+                    case 40: // arrowdown
+                        window.map_widget.translateImage(snap_el,{x:0,y:1});
+                    break;
+                    default:
+                    break;
+                };
+            }
+            if(e.ctrlKey) {
+                switch(charCode) {
+                    case 90: // z
+                        window.jweelTool.undo();
+                        window.updateMenu();
+                    break;
+                    case 89: // y
+                        window.jweelTool.redo();
+                        window.updateMenu();
+                    break;
+                    default:
+                    break;
+                };
+            }
+        }
+    };
+
+    window.launchTool(window.jweelTool, function () {
+        //Init range
+        $('.range-size').each(function() {
+            var $elt = $(this);
+
+            $elt.slider(
+                {
+                    disabled : false,
+                    min: window.cartData.getMinRange(),
+                    max: window.cartData.getMaxRange(),
+                    step: window.cartData.getStep(),
+                    value: window.cartData.getDefaultVal(),
+                    change: function(event, ui) {
+                        window.cartData.setSize(ui.value);
+                        window.cartData.update_price();
+                    },
+                    slide: function(event, ui) {
+                        if(event.originalEvent) {
+                            $('.range-value').text(ui.value+'mm');
+                        }
+                    }
+                }
+            );
+        });
+    });
+
+    // load presets image preview
+    $(document).ready(function () {
+        var xOffset = -20;
+        var yOffset = 40;
+
+        $('#curr-text-val').on('input', function(e) {
+            var snap_el = window.map_widget.getSelected();
+            var text_val = $('#curr-text-val').val();
+            if(text_val.length === 0){ text_val = "?";}
+            window.map_widget.setSnapElementAttr(snap_el, {text:text_val});
+        });
+
+        $( '#select-font' ).change(function(e) {
+            var snap_txt = window.map_widget.getSelected();
+            if(snap_txt.type === "text"){
+                window.map_widget.setSnapElementAttr(snap_txt, {
+                    "font-family":$('#select-font').val()
+                });
+            }
+        });
+
+        $('.tempbtn img').on('mouseover', function (e) {
+            var img = $(this);
+            img.t = img.data('desc');
+            img.title = "";
+            var c = (img.t != "") ? "<br/>" + img.t : "";
+            $("body").append("<p id='preview'><img src='https://www.jweel.com/html/&quot;&#32;+&#32;img.attr('link') + "' alt='Image preview' />" + c + "</p>");
+            $("#preview").css({
+                "top": (e.pageY - xOffset) + "px",
+                "left": (e.pageX + yOffset) + "px",
+                "display": "none",
+                "position": "absolute",
+                "z-index": "500",
+                "border" : "1px solid #888",
+                "margin" : "0",
+                "background": "white",
+                "text-align": "center",
+                "font-size" : "14px",
+                "font-weight": "bold",
+            }).fadeIn();
+        });
+        $('.tempbtn img').on('mouseleave', function (e) {
+            $('#preview').remove();
+        })
+    });
+
+    $('#fadeout-end-of-service').click(function(){
+        $('#end-of-service-display').fadeOut();
+    });
+
+    var displayEndOfService = function(){$('#end-of-service-display').fadeIn();};
+
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html class=" js no-mobile desktop no-ie en-section en-tools-section en-tools-textring-section w-1920 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 gt-1440 gt-1680 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded" lang="en" prefix="fb: http://www.facebook.com/2008/fbml" id="index-page">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            <title>
+
+        Jweel Textring: Your text ring
+
+</title>
+
+
+
+    <meta name="description" property="og:description" content="Create a text ring on Jweel!">
+    <meta property="og:title" content="Create your own unique ring in seconds.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="../static/img/jewels/JweelRing.jpg">
+
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../static/css/base.css">
+<link rel="stylesheet" type="text/css" href="../static/css/class.css">
+
+    <style>
+
+            #menu-signed { display:none; }
+
+    </style>
+
+<style>
+    .file-mgmt {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .file-mgmt button {
+        width: 44px;
+        height: 44px;
+        margin: 2px;
+    }
+</style>
+<link href="../static/css/keys.css" rel="stylesheet" type="text/css">
+
+<link href="../static/css/textring.css" rel="stylesheet" type="text/css">
+
+    <script src="../static/js/headjs/head.min.js"></script>
+    <script src="../static/js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../static/js/jquery/jquery-ui.js"></script>
+    <script src="../static/js/jquery/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="../static/js/site/bootbox.min.js"></script>
+    <script src="../static/js/bs/bootstrap.min.js"></script>
+    <script src="../static/js/bs/bootstrap-select.min.js"></script>
+    <script src="../static/js/site/imageManager.min.js"></script>
+    <script src="../static/js/site/jweel.min.js"></script>
+    <script src="../static/js/site/ajax.min.js"></script>
+    <script src="../static/js/site/bowser.min.js"></script>
+    <script src="../static/js/site/account.min.js"></script>
+    <script src="../static/js/site/custom.js"></script>
+    <script src="https://www.jweel.com/html/cdn.webglstats.com/stat.js" defer="defer" async="async"></script>
+    <script type="text/javascript" src="../static/js/fontdetect/fontdetect.2.2.min.js"></script>
+
+
+    <style type="text/css">.dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1 !important}.dg.main:hover .close-button,.dg.main .close-button.drag{opacity:1}.dg.main .close-button{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear;border:0;position:absolute;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-x:hidden}.dg.a.has-save ul{margin-top:27px}.dg.a.has-save ul.closed{margin-top:0}.dg.a .save-row{position:fixed;top:0;z-index:1002}.dg li{-webkit-transition:height 0.1s ease-out;-o-transition:height 0.1s ease-out;-moz-transition:height 0.1s ease-out;transition:height 0.1s ease-out}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;overflow:hidden;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid rgba(0,0,0,0)}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li > *{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .c{float:left;width:60%}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:9px}.dg .c select{margin-top:5px}.dg .cr.function,.dg .cr.function .property-name,.dg .cr.function *,.dg .cr.boolean,.dg .cr.boolean *{cursor:pointer}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0px 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco, monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px 'Lucida Grande', sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px 4px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2fa1d6}.dg .cr.number input[type=text]{color:#2fa1d6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.function:hover,.dg .cr.boolean:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2fa1d6}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}
+</style></head>
+
+    <body>
+        <div id="fontdetectHelper" style="position: absolute; visibility: hidden; top: -200px; left: -100000px; width: 100000px; height: 200px; font-size: 100px;"><span style="font-family: Norican, fantasy;">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</span></div><div class="wrapper">
+            <div class="menu-header">
+
+
+
+<nav id="main-nav" class="navbar menu-header" role="navigation">
+    <div class="logo pull-left"><a href="https://www.jweel.com/index.html" class="standard">Jweel</a></div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ul">
+        <span class="sr-only">Browse</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <ul class="nav collapse navbar-collapse navbar-nav pull-right " id="navbar-ul">
+
+
+
+        <li>
+            <a href="tools.html" title="Créer un nouveau bijou en 3D !">Create</a>
+        </li>
+        <!--
+        <li>
+            <a href="http://www.jweel.com/en/models" title="Tous les modèles" >Browse</a>
+        </li>
+        <li>
+            <a href="/en/shops/create/" title="Vendez vos créations sur Jweel !">Sell</a>
+        </li>
+        -->
+        <li class="dropdown more-dropdown">
+            <a href="textring.html" class="dropdown-toggle" data-toggle="dropdown" title="A propos">About <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="faq.html" title="La FAQ">FAQ</a></li>
+                <!-- <li><a href="http://www.jweel.com/en/materials" title="Les matériaux">Materials</a></li> -->
+                <!-- <li><a href="http://www.jweel.com/en/blog" title="Le blog">Blog</a></li> -->
+                <li><a href="press.html" title="Presse">Press review</a></li>
+                <!--
+                <li>
+                    <a href="/en/giftvoucher" title="Offrez un chèque-cadeau Jweel !" style="color:red;">Gift-voucher</a>
+                </li>
+                -->
+                <li><a rel="nofollow" href="https://www.flickr.com/photos/122582706@N06/sets/72157643572331354/" title="Photos" target="_blank">Pictures</a></li>
+                <li><a href="about.html" title="À propos de Jweel">About Jweel</a></li>
+                <!--
+                <li class="divider"></li>
+                <li><a rel="nofollow" href="http://www.facebook.com/jweelWorld" title="Facebook"><i class="icon-fb"></i>&nbsp;&nbsp;Facebook</a></li>
+                <li><a rel="nofollow" href="https://www.pinterest.com/jweelworld/" title="Pinterest"><i class="icon-pin"></i>&nbsp;&nbsp;Pinterest</a></li>
+                <li><a rel="nofollow" href="https://twitter.com/JweelWorld" title="Twitter"><i class="icon-tw"></i>&nbsp;&nbsp;Twitter</a></li>
+                -->
+            </ul>
+        </li>
+        <!--
+        <li class="dropdown cart-dropdown">
+        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cart"></i> <span class="cartprice">0€</span> <span class="badge nb-cart-items"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dynamic"><p>Votre panier est vide.</p></li>
+
+
+                <li class="dynamic">
+                    <button type="button" class="btn order-trigger" disabled="">Order</button>
+                </li>
+
+                <hr class="dynamic">
+
+                <li><button type="button" class="btn" action="./tools.html">Design</button></li>
+            </ul>
+        </li>
+        -->
+        <li id="menu-unsigned">
+            <button type="button" id="connect-popup-trigger" class="btn" onclick="displayEndOfService()">Sign in</button>
+            <button type="button" class="btn btn-white" onclick="displayEndOfService()">Register</button>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</nav>
+
+            </div>
+            <div id="content">
+
+    <div id="end-of-service-display" class="fullsize-shadow" style="display: none;">
+      <div class="popup" style="height:430px;max-width:1024px;">
+          <div style="text-align:center" class="box-title">
+              <img style="float:unset;" alt="jweel logo" src="../static/img/logo/jweel.png">
+          </div>
+          <h2><b> End of Jweel services </b></h2>
+          <p style="text-align:left">Following personnal opportunities for Jweel founders, and no one to continue Jweel maintenance, the Jweel adventure is now over. Many thanks to all our customers and designers, who trusted us during the few years of service.</p>
+           <p style="text-align:left"><b>With more than 12 000 designs shared 3000 times, we are happy that we could help our 29 000 users to express their creativity.</b></p>
+          <p style="text-align:left">On demand manufacturing is closed, but we have opened the applications and they are now accessible for free! You can save design files, and export to 3D standard format for manufacturing, enjoy!</p>
+          <p style="color:red;">Warning : all account owners should save their models as soon as possible, since we may have to clean our whole database soon.</p>
+          <p style="color:#002e32;text-align:left">If you have any question regarding our technologies, or the Jweel story, feel free to contact us personnally or using contact[at]jweel.com, We would be glad to share our experience and help you with your projects :)</p>
+          <button type="button" class="btn btn-blue" id="fadeout-end-of-service">OK</button>
+      </div>
+    </div>
+
+
+<section class="creation-section">
+    <div class="box-creation">
+
+
+
+<div class="vertical-contents box-creation">
+    <div class="content">
+        <h2>Textring</h2>
+    </div>
+    <div class="content">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#collapseOne">
+                    <h4 class="panel-title">
+                        File
+                        <i data-toggle="popover" data-content="Save, copy, share or reset your jewel" class="pull-right icon-question icon-right" data-original-title="" title=""></i>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div id="file-button-list" class="col-md-12" style="margin:0px; padding:0px;">
+
+                            <button type="button" data-container="body" class="save-file-trigger btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Save">
+                                <img src="../static/img/btn/IconSave.png" alt="Add a ring">
+                            </button>
+                            <button type="button" data-container="body" class="load-file-trigger btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="Load">
+                                <img src="../static/img/btn/IconLoadFile.png">
+                            </button>
+                            <input id="load-file-input" type="file" accept=".jweel" style="display: none;">
+
+                            <!--
+
+                            <button id="copy-file" data-container="body" type="button" class="btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html='true' title='Save as' disabled>
+                                <img src="../static/img/btn/IconSaveAs.png" alt="Save your ring" >
+                            </button>
+                            <button id="new-file" data-container="body" type="button" class="btn action-button shortcut-tooltip" data-toggle="tooltip" data-html='true' title='New object'>
+                                <img src="../static/img/btn/IconNewFile.png" alt="New object" >
+                            </button>
+                            <button id="publish-file" data-container="body" type="button" class="btn action-button surface-show-hook shortcut-tooltip" data-toggle="tooltip" data-html='true' title='Publish your object in the gallery' disabled>
+                                <img src="../static/img/btn/IconShare.png" alt="Publish your object" >
+                            </button>
+
+                            -->
+                        </div>
+                        <button id="saving-button" class="btn btn-dark col-md-11" style="display:none;" disabled="">
+                            <img src="../static/img/elt/loading.gif" style="width:25px;height:25px;" alt="loading"> Saving...
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#collapseTwo">
+                    <h4 class="panel-title">
+                        Parameters
+                        <i data-toggle="popover" data-content="Your Text ring parameters" class="pull-right icon-question icon-right" data-original-title="" title=""></i>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <label><b>Select a font:</b></label>
+                        <div id="picker-click-trigger">
+                            <select id="select-font" name="select-font" class="action-on-click" data-container="body" style="display: none;"></select>
+                        </div>
+                        <label class="pull-left"><b>Type your text:</b></label>
+                        <div class="font-style pull-right">
+                            <div id="symbols-container"> <div id="symbol-display" data-container="body" style="visibility: hidden;"><div class="row"><ul class="col-md-11 nav nav-tabs"><li class="active"><a data-symbollist="miscSymbols" title="Divers" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Divers</a></li><li><a data-symbollist="geometry" title="Géometrie" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Géometrie</a></li><li><a data-symbollist="arrows" title="Flèches" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Flèches</a></li><li><a data-symbollist="maths" title="Maths" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Maths</a></li><li><a data-symbollist="numbers" title="Nombres" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Nombres</a></li><li><a data-symbollist="game" title="Jeux" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Jeux</a></li><li><a data-symbollist="crossandstars" title="Etoiles et Croix" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Etoiles et Croix</a></li><li><a data-symbollist="zodiac" title="Zodiac" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Zodiac</a></li><li><a data-symbollist="tatooLike" title="Tatouages" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Tatouages</a></li><li><a data-symbollist="medievalBeasts" title="Blasons" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Blasons</a></li><li><a data-symbollist="celtical" title="Celtique" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Celtique</a></li><li><a data-symbollist="ornaments" title="Ornements" href="textring.html" data-toggle="tab" class="symbol-list-trigger">Ornements</a></li></ul><button type="button" aria-hidden="true" class="close-symbols-trigger navbar-link">x</button></div><div id="symbol-list-display"><ul style="display: block;"><li class="symbol-button-trigger"><div title="΄">΄</div></li><li class="symbol-button-trigger"><div title="΅">΅</div></li><li class="symbol-button-trigger"><div title="Ά">Ά</div></li><li class="symbol-button-trigger"><div title="·">·</div></li><li class="symbol-button-trigger"><div title="Έ">Έ</div></li><li class="symbol-button-trigger"><div title="Ή">Ή</div></li><li class="symbol-button-trigger"><div title="Ί">Ί</div></li><li class="symbol-button-trigger"><div title="΋">΋</div></li><li class="symbol-button-trigger"><div title="Ό">Ό</div></li><li class="symbol-button-trigger"><div title="΍">΍</div></li><li class="symbol-button-trigger"><div title="Ύ">Ύ</div></li><li class="symbol-button-trigger"><div title="Ώ">Ώ</div></li><li class="symbol-button-trigger"><div title="ΐ">ΐ</div></li><li class="symbol-button-trigger"><div title="Α">Α</div></li><li class="symbol-button-trigger"><div title="Β">Β</div></li><li class="symbol-button-trigger"><div title="Γ">Γ</div></li><li class="symbol-button-trigger"><div title="Δ">Δ</div></li><li class="symbol-button-trigger"><div title="Ε">Ε</div></li><li class="symbol-button-trigger"><div title="Ζ">Ζ</div></li><li class="symbol-button-trigger"><div title="Η">Η</div></li><li class="symbol-button-trigger"><div title="Θ">Θ</div></li><li class="symbol-button-trigger"><div title="Ι">Ι</div></li><li class="symbol-button-trigger"><div title="Κ">Κ</div></li><li class="symbol-button-trigger"><div title="Λ">Λ</div></li><li class="symbol-button-trigger"><div title="Μ">Μ</div></li><li class="symbol-button-trigger"><div title="Ν">Ν</div></li><li class="symbol-button-trigger"><div title="Ξ">Ξ</div></li><li class="symbol-button-trigger"><div title="Ο">Ο</div></li><li class="symbol-button-trigger"><div title="Π">Π</div></li><li class="symbol-button-trigger"><div title="Ρ">Ρ</div></li><li class="symbol-button-trigger"><div title="΢">΢</div></li><li class="symbol-button-trigger"><div title="Σ">Σ</div></li><li class="symbol-button-trigger"><div title="Τ">Τ</div></li><li class="symbol-button-trigger"><div title="Υ">Υ</div></li><li class="symbol-button-trigger"><div title="Φ">Φ</div></li><li class="symbol-button-trigger"><div title="Χ">Χ</div></li><li class="symbol-button-trigger"><div title="Ψ">Ψ</div></li><li class="symbol-button-trigger"><div title="Ω">Ω</div></li><li class="symbol-button-trigger"><div title="Ϊ">Ϊ</div></li><li class="symbol-button-trigger"><div title="Ϋ">Ϋ</div></li><li class="symbol-button-trigger"><div title="ά">ά</div></li><li class="symbol-button-trigger"><div title="έ">έ</div></li><li class="symbol-button-trigger"><div title="ή">ή</div></li><li class="symbol-button-trigger"><div title="ί">ί</div></li><li class="symbol-button-trigger"><div title="ΰ">ΰ</div></li><li class="symbol-button-trigger"><div title="α">α</div></li><li class="symbol-button-trigger"><div title="β">β</div></li><li class="symbol-button-trigger"><div title="γ">γ</div></li><li class="symbol-button-trigger"><div title="δ">δ</div></li><li class="symbol-button-trigger"><div title="ε">ε</div></li><li class="symbol-button-trigger"><div title="ζ">ζ</div></li><li class="symbol-button-trigger"><div title="η">η</div></li><li class="symbol-button-trigger"><div title="θ">θ</div></li><li class="symbol-button-trigger"><div title="ι">ι</div></li><li class="symbol-button-trigger"><div title="κ">κ</div></li><li class="symbol-button-trigger"><div title="λ">λ</div></li><li class="symbol-button-trigger"><div title="μ">μ</div></li><li class="symbol-button-trigger"><div title="ν">ν</div></li><li class="symbol-button-trigger"><div title="ξ">ξ</div></li><li class="symbol-button-trigger"><div title="ο">ο</div></li><li class="symbol-button-trigger"><div title="π">π</div></li><li class="symbol-button-trigger"><div title="ρ">ρ</div></li><li class="symbol-button-trigger"><div title="ς">ς</div></li><li class="symbol-button-trigger"><div title="σ">σ</div></li><li class="symbol-button-trigger"><div title="τ">τ</div></li><li class="symbol-button-trigger"><div title="υ">υ</div></li><li class="symbol-button-trigger"><div title="φ">φ</div></li><li class="symbol-button-trigger"><div title="χ">χ</div></li><li class="symbol-button-trigger"><div title="ψ">ψ</div></li><li class="symbol-button-trigger"><div title="ω">ω</div></li><li class="symbol-button-trigger"><div title="ϊ">ϊ</div></li><li class="symbol-button-trigger"><div title="ϋ">ϋ</div></li><li class="symbol-button-trigger"><div title="ό">ό</div></li><li class="symbol-button-trigger"><div title="ύ">ύ</div></li><li class="symbol-button-trigger"><div title="ώ">ώ</div></li><li class="symbol-button-trigger"><div title="Ϗ">Ϗ</div></li><li class="symbol-button-trigger"><div title="ϐ">ϐ</div></li><li class="symbol-button-trigger"><div title="ϑ">ϑ</div></li><li class="symbol-button-trigger"><div title="ϒ">ϒ</div></li><li class="symbol-button-trigger"><div title="ϓ">ϓ</div></li><li class="symbol-button-trigger"><div title="ϔ">ϔ</div></li><li class="symbol-button-trigger"><div title="ϕ">ϕ</div></li><li class="symbol-button-trigger"><div title="ϖ">ϖ</div></li><li class="symbol-button-trigger"><div title="ϗ">ϗ</div></li><li class="symbol-button-trigger"><div title="Ϙ">Ϙ</div></li><li class="symbol-button-trigger"><div title="ϙ">ϙ</div></li><li class="symbol-button-trigger"><div title="Ϛ">Ϛ</div></li><li class="symbol-button-trigger"><div title="ϛ">ϛ</div></li><li class="symbol-button-trigger"><div title="Ϝ">Ϝ</div></li><li class="symbol-button-trigger"><div title="ϝ">ϝ</div></li><li class="symbol-button-trigger"><div title="Ϟ">Ϟ</div></li><li class="symbol-button-trigger"><div title="ϟ">ϟ</div></li><li class="symbol-button-trigger"><div title="Ϡ">Ϡ</div></li><li class="symbol-button-trigger"><div title="ϡ">ϡ</div></li><li class="symbol-button-trigger"><div title="Ϣ">Ϣ</div></li><li class="symbol-button-trigger"><div title="ϣ">ϣ</div></li><li class="symbol-button-trigger"><div title="Ϥ">Ϥ</div></li><li class="symbol-button-trigger"><div title="ϥ">ϥ</div></li><li class="symbol-button-trigger"><div title="Ϧ">Ϧ</div></li><li class="symbol-button-trigger"><div title="ϧ">ϧ</div></li><li class="symbol-button-trigger"><div title="Ϩ">Ϩ</div></li><li class="symbol-button-trigger"><div title="ϩ">ϩ</div></li><li class="symbol-button-trigger"><div title="Ϫ">Ϫ</div></li><li class="symbol-button-trigger"><div title="ϫ">ϫ</div></li><li class="symbol-button-trigger"><div title="Ϭ">Ϭ</div></li><li class="symbol-button-trigger"><div title="ϭ">ϭ</div></li><li class="symbol-button-trigger"><div title="Ϯ">Ϯ</div></li><li class="symbol-button-trigger"><div title="ϯ">ϯ</div></li><li class="symbol-button-trigger"><div title="ϰ">ϰ</div></li><li class="symbol-button-trigger"><div title="ϱ">ϱ</div></li><li class="symbol-button-trigger"><div title="ϲ">ϲ</div></li><li class="symbol-button-trigger"><div title="ϳ">ϳ</div></li><li class="symbol-button-trigger"><div title="ϴ">ϴ</div></li><li class="symbol-button-trigger"><div title="ϵ">ϵ</div></li><li class="symbol-button-trigger"><div title="϶">϶</div></li><li class="symbol-button-trigger"><div title="Ϸ">Ϸ</div></li><li class="symbol-button-trigger"><div title="ϸ">ϸ</div></li><li class="symbol-button-trigger"><div title="Ϲ">Ϲ</div></li><li class="symbol-button-trigger"><div title="Ϻ">Ϻ</div></li><li class="symbol-button-trigger"><div title="ϻ">ϻ</div></li><li class="symbol-button-trigger"><div title="ϼ">ϼ</div></li><li class="symbol-button-trigger"><div title="Ͻ">Ͻ</div></li><li class="symbol-button-trigger"><div title="Ͼ">Ͼ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="က">က</div></li><li class="symbol-button-trigger"><div title="ခ">ခ</div></li><li class="symbol-button-trigger"><div title="ဂ">ဂ</div></li><li class="symbol-button-trigger"><div title="ဃ">ဃ</div></li><li class="symbol-button-trigger"><div title="င">င</div></li><li class="symbol-button-trigger"><div title="စ">စ</div></li><li class="symbol-button-trigger"><div title="ဆ">ဆ</div></li><li class="symbol-button-trigger"><div title="ဇ">ဇ</div></li><li class="symbol-button-trigger"><div title="ဈ">ဈ</div></li><li class="symbol-button-trigger"><div title="ဉ">ဉ</div></li><li class="symbol-button-trigger"><div title="ည">ည</div></li><li class="symbol-button-trigger"><div title="ဋ">ဋ</div></li><li class="symbol-button-trigger"><div title="ဌ">ဌ</div></li><li class="symbol-button-trigger"><div title="ဍ">ဍ</div></li><li class="symbol-button-trigger"><div title="ဎ">ဎ</div></li><li class="symbol-button-trigger"><div title="ဏ">ဏ</div></li><li class="symbol-button-trigger"><div title="တ">တ</div></li><li class="symbol-button-trigger"><div title="ထ">ထ</div></li><li class="symbol-button-trigger"><div title="ဒ">ဒ</div></li><li class="symbol-button-trigger"><div title="ဓ">ဓ</div></li><li class="symbol-button-trigger"><div title="န">န</div></li><li class="symbol-button-trigger"><div title="ပ">ပ</div></li><li class="symbol-button-trigger"><div title="ဖ">ဖ</div></li><li class="symbol-button-trigger"><div title="ဗ">ဗ</div></li><li class="symbol-button-trigger"><div title="ဘ">ဘ</div></li><li class="symbol-button-trigger"><div title="မ">မ</div></li><li class="symbol-button-trigger"><div title="ယ">ယ</div></li><li class="symbol-button-trigger"><div title="ရ">ရ</div></li><li class="symbol-button-trigger"><div title="လ">လ</div></li><li class="symbol-button-trigger"><div title="ဝ">ဝ</div></li><li class="symbol-button-trigger"><div title="သ">သ</div></li><li class="symbol-button-trigger"><div title="ဟ">ဟ</div></li><li class="symbol-button-trigger"><div title="ဠ">ဠ</div></li><li class="symbol-button-trigger"><div title="အ">အ</div></li><li class="symbol-button-trigger"><div title="ဢ">ဢ</div></li><li class="symbol-button-trigger"><div title="ဣ">ဣ</div></li><li class="symbol-button-trigger"><div title="ဤ">ဤ</div></li><li class="symbol-button-trigger"><div title="ဥ">ဥ</div></li><li class="symbol-button-trigger"><div title="ဦ">ဦ</div></li><li class="symbol-button-trigger"><div title="ဧ">ဧ</div></li><li class="symbol-button-trigger"><div title="ဨ">ဨ</div></li><li class="symbol-button-trigger"><div title="ဩ">ဩ</div></li><li class="symbol-button-trigger"><div title="ဪ">ဪ</div></li><li class="symbol-button-trigger"><div title="ါ">ါ</div></li><li class="symbol-button-trigger"><div title="ာ">ာ</div></li><li class="symbol-button-trigger"><div title="ိ">ိ</div></li><li class="symbol-button-trigger"><div title="ီ">ီ</div></li><li class="symbol-button-trigger"><div title="ု">ု</div></li><li class="symbol-button-trigger"><div title="ူ">ူ</div></li><li class="symbol-button-trigger"><div title="ေ">ေ</div></li><li class="symbol-button-trigger"><div title="ဲ">ဲ</div></li><li class="symbol-button-trigger"><div title="ဳ">ဳ</div></li><li class="symbol-button-trigger"><div title="ဴ">ဴ</div></li><li class="symbol-button-trigger"><div title="ဵ">ဵ</div></li><li class="symbol-button-trigger"><div title="ံ">ံ</div></li><li class="symbol-button-trigger"><div title="့">့</div></li><li class="symbol-button-trigger"><div title="း">း</div></li><li class="symbol-button-trigger"><div title="္">္</div></li><li class="symbol-button-trigger"><div title="်">်</div></li><li class="symbol-button-trigger"><div title="ျ">ျ</div></li><li class="symbol-button-trigger"><div title="ြ">ြ</div></li><li class="symbol-button-trigger"><div title="ွ">ွ</div></li><li class="symbol-button-trigger"><div title="ှ">ှ</div></li><li class="symbol-button-trigger"><div title="ဿ">ဿ</div></li><li class="symbol-button-trigger"><div title="၀">၀</div></li><li class="symbol-button-trigger"><div title="၁">၁</div></li><li class="symbol-button-trigger"><div title="၂">၂</div></li><li class="symbol-button-trigger"><div title="၃">၃</div></li><li class="symbol-button-trigger"><div title="၄">၄</div></li><li class="symbol-button-trigger"><div title="၅">၅</div></li><li class="symbol-button-trigger"><div title="၆">၆</div></li><li class="symbol-button-trigger"><div title="၇">၇</div></li><li class="symbol-button-trigger"><div title="၈">၈</div></li><li class="symbol-button-trigger"><div title="၉">၉</div></li><li class="symbol-button-trigger"><div title="၊">၊</div></li><li class="symbol-button-trigger"><div title="။">။</div></li><li class="symbol-button-trigger"><div title="၌">၌</div></li><li class="symbol-button-trigger"><div title="၍">၍</div></li><li class="symbol-button-trigger"><div title="၎">၎</div></li><li class="symbol-button-trigger"><div title="၏">၏</div></li><li class="symbol-button-trigger"><div title="ၐ">ၐ</div></li><li class="symbol-button-trigger"><div title="ၑ">ၑ</div></li><li class="symbol-button-trigger"><div title="ၒ">ၒ</div></li><li class="symbol-button-trigger"><div title="ၓ">ၓ</div></li><li class="symbol-button-trigger"><div title="ၔ">ၔ</div></li><li class="symbol-button-trigger"><div title="ၕ">ၕ</div></li><li class="symbol-button-trigger"><div title="ၖ">ၖ</div></li><li class="symbol-button-trigger"><div title="ၗ">ၗ</div></li><li class="symbol-button-trigger"><div title="ၘ">ၘ</div></li><li class="symbol-button-trigger"><div title="ၙ">ၙ</div></li><li class="symbol-button-trigger"><div title="ၚ">ၚ</div></li><li class="symbol-button-trigger"><div title="ၛ">ၛ</div></li><li class="symbol-button-trigger"><div title="ၜ">ၜ</div></li><li class="symbol-button-trigger"><div title="ၝ">ၝ</div></li><li class="symbol-button-trigger"><div title="ၞ">ၞ</div></li><li class="symbol-button-trigger"><div title="ၟ">ၟ</div></li><li class="symbol-button-trigger"><div title="ၠ">ၠ</div></li><li class="symbol-button-trigger"><div title="ၡ">ၡ</div></li><li class="symbol-button-trigger"><div title="ၢ">ၢ</div></li><li class="symbol-button-trigger"><div title="ၣ">ၣ</div></li><li class="symbol-button-trigger"><div title="ၤ">ၤ</div></li><li class="symbol-button-trigger"><div title="ၥ">ၥ</div></li><li class="symbol-button-trigger"><div title="ၦ">ၦ</div></li><li class="symbol-button-trigger"><div title="ၧ">ၧ</div></li><li class="symbol-button-trigger"><div title="ၨ">ၨ</div></li><li class="symbol-button-trigger"><div title="ၩ">ၩ</div></li><li class="symbol-button-trigger"><div title="ၪ">ၪ</div></li><li class="symbol-button-trigger"><div title="ၫ">ၫ</div></li><li class="symbol-button-trigger"><div title="ၬ">ၬ</div></li><li class="symbol-button-trigger"><div title="ၭ">ၭ</div></li><li class="symbol-button-trigger"><div title="ၮ">ၮ</div></li><li class="symbol-button-trigger"><div title="ၯ">ၯ</div></li><li class="symbol-button-trigger"><div title="ၰ">ၰ</div></li><li class="symbol-button-trigger"><div title="ၱ">ၱ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᄀ">ᄀ</div></li><li class="symbol-button-trigger"><div title="ᄁ">ᄁ</div></li><li class="symbol-button-trigger"><div title="ᄂ">ᄂ</div></li><li class="symbol-button-trigger"><div title="ᄃ">ᄃ</div></li><li class="symbol-button-trigger"><div title="ᄄ">ᄄ</div></li><li class="symbol-button-trigger"><div title="ᄅ">ᄅ</div></li><li class="symbol-button-trigger"><div title="ᄆ">ᄆ</div></li><li class="symbol-button-trigger"><div title="ᄇ">ᄇ</div></li><li class="symbol-button-trigger"><div title="ᄈ">ᄈ</div></li><li class="symbol-button-trigger"><div title="ᄉ">ᄉ</div></li><li class="symbol-button-trigger"><div title="ᄊ">ᄊ</div></li><li class="symbol-button-trigger"><div title="ᄋ">ᄋ</div></li><li class="symbol-button-trigger"><div title="ᄌ">ᄌ</div></li><li class="symbol-button-trigger"><div title="ᄍ">ᄍ</div></li><li class="symbol-button-trigger"><div title="ᄎ">ᄎ</div></li><li class="symbol-button-trigger"><div title="ᄏ">ᄏ</div></li><li class="symbol-button-trigger"><div title="ᄐ">ᄐ</div></li><li class="symbol-button-trigger"><div title="ᄑ">ᄑ</div></li><li class="symbol-button-trigger"><div title="ᄒ">ᄒ</div></li><li class="symbol-button-trigger"><div title="ᄓ">ᄓ</div></li><li class="symbol-button-trigger"><div title="ᄔ">ᄔ</div></li><li class="symbol-button-trigger"><div title="ᄕ">ᄕ</div></li><li class="symbol-button-trigger"><div title="ᄖ">ᄖ</div></li><li class="symbol-button-trigger"><div title="ᄗ">ᄗ</div></li><li class="symbol-button-trigger"><div title="ᄘ">ᄘ</div></li><li class="symbol-button-trigger"><div title="ᄙ">ᄙ</div></li><li class="symbol-button-trigger"><div title="ᄚ">ᄚ</div></li><li class="symbol-button-trigger"><div title="ᄛ">ᄛ</div></li><li class="symbol-button-trigger"><div title="ᄜ">ᄜ</div></li><li class="symbol-button-trigger"><div title="ᄝ">ᄝ</div></li><li class="symbol-button-trigger"><div title="ᄞ">ᄞ</div></li><li class="symbol-button-trigger"><div title="ᄟ">ᄟ</div></li><li class="symbol-button-trigger"><div title="ᄠ">ᄠ</div></li><li class="symbol-button-trigger"><div title="ᄡ">ᄡ</div></li><li class="symbol-button-trigger"><div title="ᄢ">ᄢ</div></li><li class="symbol-button-trigger"><div title="ᄣ">ᄣ</div></li><li class="symbol-button-trigger"><div title="ᄤ">ᄤ</div></li><li class="symbol-button-trigger"><div title="ᄥ">ᄥ</div></li><li class="symbol-button-trigger"><div title="ᄦ">ᄦ</div></li><li class="symbol-button-trigger"><div title="ᄧ">ᄧ</div></li><li class="symbol-button-trigger"><div title="ᄨ">ᄨ</div></li><li class="symbol-button-trigger"><div title="ᄩ">ᄩ</div></li><li class="symbol-button-trigger"><div title="ᄪ">ᄪ</div></li><li class="symbol-button-trigger"><div title="ᄫ">ᄫ</div></li><li class="symbol-button-trigger"><div title="ᄬ">ᄬ</div></li><li class="symbol-button-trigger"><div title="ᄭ">ᄭ</div></li><li class="symbol-button-trigger"><div title="ᄮ">ᄮ</div></li><li class="symbol-button-trigger"><div title="ᄯ">ᄯ</div></li><li class="symbol-button-trigger"><div title="ᄰ">ᄰ</div></li><li class="symbol-button-trigger"><div title="ᄱ">ᄱ</div></li><li class="symbol-button-trigger"><div title="ᄲ">ᄲ</div></li><li class="symbol-button-trigger"><div title="ᄳ">ᄳ</div></li><li class="symbol-button-trigger"><div title="ᄴ">ᄴ</div></li><li class="symbol-button-trigger"><div title="ᄵ">ᄵ</div></li><li class="symbol-button-trigger"><div title="ᄶ">ᄶ</div></li><li class="symbol-button-trigger"><div title="ᄷ">ᄷ</div></li><li class="symbol-button-trigger"><div title="ᄸ">ᄸ</div></li><li class="symbol-button-trigger"><div title="ᄹ">ᄹ</div></li><li class="symbol-button-trigger"><div title="ᄺ">ᄺ</div></li><li class="symbol-button-trigger"><div title="ᄻ">ᄻ</div></li><li class="symbol-button-trigger"><div title="ᄼ">ᄼ</div></li><li class="symbol-button-trigger"><div title="ᄽ">ᄽ</div></li><li class="symbol-button-trigger"><div title="ᄾ">ᄾ</div></li><li class="symbol-button-trigger"><div title="ᄿ">ᄿ</div></li><li class="symbol-button-trigger"><div title="ᅀ">ᅀ</div></li><li class="symbol-button-trigger"><div title="ᅁ">ᅁ</div></li><li class="symbol-button-trigger"><div title="ᅂ">ᅂ</div></li><li class="symbol-button-trigger"><div title="ᅃ">ᅃ</div></li><li class="symbol-button-trigger"><div title="ᅄ">ᅄ</div></li><li class="symbol-button-trigger"><div title="ᅅ">ᅅ</div></li><li class="symbol-button-trigger"><div title="ᅆ">ᅆ</div></li><li class="symbol-button-trigger"><div title="ᅇ">ᅇ</div></li><li class="symbol-button-trigger"><div title="ᅈ">ᅈ</div></li><li class="symbol-button-trigger"><div title="ᅉ">ᅉ</div></li><li class="symbol-button-trigger"><div title="ᅊ">ᅊ</div></li><li class="symbol-button-trigger"><div title="ᅋ">ᅋ</div></li><li class="symbol-button-trigger"><div title="ᅌ">ᅌ</div></li><li class="symbol-button-trigger"><div title="ᅍ">ᅍ</div></li><li class="symbol-button-trigger"><div title="ᅎ">ᅎ</div></li><li class="symbol-button-trigger"><div title="ᅏ">ᅏ</div></li><li class="symbol-button-trigger"><div title="ᅐ">ᅐ</div></li><li class="symbol-button-trigger"><div title="ᅑ">ᅑ</div></li><li class="symbol-button-trigger"><div title="ᅒ">ᅒ</div></li><li class="symbol-button-trigger"><div title="ᅓ">ᅓ</div></li><li class="symbol-button-trigger"><div title="ᅔ">ᅔ</div></li><li class="symbol-button-trigger"><div title="ᅕ">ᅕ</div></li><li class="symbol-button-trigger"><div title="ᅖ">ᅖ</div></li><li class="symbol-button-trigger"><div title="ᅗ">ᅗ</div></li><li class="symbol-button-trigger"><div title="ᅘ">ᅘ</div></li><li class="symbol-button-trigger"><div title="ᅙ">ᅙ</div></li><li class="symbol-button-trigger"><div title="ᅚ">ᅚ</div></li><li class="symbol-button-trigger"><div title="ᅛ">ᅛ</div></li><li class="symbol-button-trigger"><div title="ᅜ">ᅜ</div></li><li class="symbol-button-trigger"><div title="ᅝ">ᅝ</div></li><li class="symbol-button-trigger"><div title="ᅞ">ᅞ</div></li><li class="symbol-button-trigger"><div title="ᅟ">ᅟ</div></li><li class="symbol-button-trigger"><div title="ᅠ">ᅠ</div></li><li class="symbol-button-trigger"><div title="ᅡ">ᅡ</div></li><li class="symbol-button-trigger"><div title="ᅢ">ᅢ</div></li><li class="symbol-button-trigger"><div title="ᅣ">ᅣ</div></li><li class="symbol-button-trigger"><div title="ᅤ">ᅤ</div></li><li class="symbol-button-trigger"><div title="ᅥ">ᅥ</div></li><li class="symbol-button-trigger"><div title="ᅦ">ᅦ</div></li><li class="symbol-button-trigger"><div title="ᅧ">ᅧ</div></li><li class="symbol-button-trigger"><div title="ᅨ">ᅨ</div></li><li class="symbol-button-trigger"><div title="ᅩ">ᅩ</div></li><li class="symbol-button-trigger"><div title="ᅪ">ᅪ</div></li><li class="symbol-button-trigger"><div title="ᅫ">ᅫ</div></li><li class="symbol-button-trigger"><div title="ᅬ">ᅬ</div></li><li class="symbol-button-trigger"><div title="ᅭ">ᅭ</div></li><li class="symbol-button-trigger"><div title="ᅮ">ᅮ</div></li><li class="symbol-button-trigger"><div title="ᅯ">ᅯ</div></li><li class="symbol-button-trigger"><div title="ᅰ">ᅰ</div></li><li class="symbol-button-trigger"><div title="ᅱ">ᅱ</div></li><li class="symbol-button-trigger"><div title="ᅲ">ᅲ</div></li><li class="symbol-button-trigger"><div title="ᅳ">ᅳ</div></li><li class="symbol-button-trigger"><div title="ᅴ">ᅴ</div></li><li class="symbol-button-trigger"><div title="ᅵ">ᅵ</div></li><li class="symbol-button-trigger"><div title="ᅶ">ᅶ</div></li><li class="symbol-button-trigger"><div title="ᅷ">ᅷ</div></li><li class="symbol-button-trigger"><div title="ᅸ">ᅸ</div></li><li class="symbol-button-trigger"><div title="ᅹ">ᅹ</div></li><li class="symbol-button-trigger"><div title="ᅺ">ᅺ</div></li><li class="symbol-button-trigger"><div title="ᅻ">ᅻ</div></li><li class="symbol-button-trigger"><div title="ᅼ">ᅼ</div></li><li class="symbol-button-trigger"><div title="ᅽ">ᅽ</div></li><li class="symbol-button-trigger"><div title="ᅾ">ᅾ</div></li><li class="symbol-button-trigger"><div title="ᅿ">ᅿ</div></li><li class="symbol-button-trigger"><div title="ᆀ">ᆀ</div></li><li class="symbol-button-trigger"><div title="ᆁ">ᆁ</div></li><li class="symbol-button-trigger"><div title="ᆂ">ᆂ</div></li><li class="symbol-button-trigger"><div title="ᆃ">ᆃ</div></li><li class="symbol-button-trigger"><div title="ᆄ">ᆄ</div></li><li class="symbol-button-trigger"><div title="ᆅ">ᆅ</div></li><li class="symbol-button-trigger"><div title="ᆆ">ᆆ</div></li><li class="symbol-button-trigger"><div title="ᆇ">ᆇ</div></li><li class="symbol-button-trigger"><div title="ᆈ">ᆈ</div></li><li class="symbol-button-trigger"><div title="ᆉ">ᆉ</div></li><li class="symbol-button-trigger"><div title="ᆊ">ᆊ</div></li><li class="symbol-button-trigger"><div title="ᆋ">ᆋ</div></li><li class="symbol-button-trigger"><div title="ᆌ">ᆌ</div></li><li class="symbol-button-trigger"><div title="ᆍ">ᆍ</div></li><li class="symbol-button-trigger"><div title="ᆎ">ᆎ</div></li><li class="symbol-button-trigger"><div title="ᆏ">ᆏ</div></li><li class="symbol-button-trigger"><div title="ᆐ">ᆐ</div></li><li class="symbol-button-trigger"><div title="ᆑ">ᆑ</div></li><li class="symbol-button-trigger"><div title="ᆒ">ᆒ</div></li><li class="symbol-button-trigger"><div title="ᆓ">ᆓ</div></li><li class="symbol-button-trigger"><div title="ᆔ">ᆔ</div></li><li class="symbol-button-trigger"><div title="ᆕ">ᆕ</div></li><li class="symbol-button-trigger"><div title="ᆖ">ᆖ</div></li><li class="symbol-button-trigger"><div title="ᆗ">ᆗ</div></li><li class="symbol-button-trigger"><div title="ᆘ">ᆘ</div></li><li class="symbol-button-trigger"><div title="ᆙ">ᆙ</div></li><li class="symbol-button-trigger"><div title="ᆚ">ᆚ</div></li><li class="symbol-button-trigger"><div title="ᆛ">ᆛ</div></li><li class="symbol-button-trigger"><div title="ᆜ">ᆜ</div></li><li class="symbol-button-trigger"><div title="ᆝ">ᆝ</div></li><li class="symbol-button-trigger"><div title="ᆞ">ᆞ</div></li><li class="symbol-button-trigger"><div title="ᆟ">ᆟ</div></li><li class="symbol-button-trigger"><div title="ᆠ">ᆠ</div></li><li class="symbol-button-trigger"><div title="ᆡ">ᆡ</div></li><li class="symbol-button-trigger"><div title="ᆢ">ᆢ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ሀ">ሀ</div></li><li class="symbol-button-trigger"><div title="ሁ">ሁ</div></li><li class="symbol-button-trigger"><div title="ሂ">ሂ</div></li><li class="symbol-button-trigger"><div title="ሃ">ሃ</div></li><li class="symbol-button-trigger"><div title="ሄ">ሄ</div></li><li class="symbol-button-trigger"><div title="ህ">ህ</div></li><li class="symbol-button-trigger"><div title="ሆ">ሆ</div></li><li class="symbol-button-trigger"><div title="ሇ">ሇ</div></li><li class="symbol-button-trigger"><div title="ለ">ለ</div></li><li class="symbol-button-trigger"><div title="ሉ">ሉ</div></li><li class="symbol-button-trigger"><div title="ሊ">ሊ</div></li><li class="symbol-button-trigger"><div title="ላ">ላ</div></li><li class="symbol-button-trigger"><div title="ሌ">ሌ</div></li><li class="symbol-button-trigger"><div title="ል">ል</div></li><li class="symbol-button-trigger"><div title="ሎ">ሎ</div></li><li class="symbol-button-trigger"><div title="ሏ">ሏ</div></li><li class="symbol-button-trigger"><div title="ሐ">ሐ</div></li><li class="symbol-button-trigger"><div title="ሑ">ሑ</div></li><li class="symbol-button-trigger"><div title="ሒ">ሒ</div></li><li class="symbol-button-trigger"><div title="ሓ">ሓ</div></li><li class="symbol-button-trigger"><div title="ሔ">ሔ</div></li><li class="symbol-button-trigger"><div title="ሕ">ሕ</div></li><li class="symbol-button-trigger"><div title="ሖ">ሖ</div></li><li class="symbol-button-trigger"><div title="ሗ">ሗ</div></li><li class="symbol-button-trigger"><div title="መ">መ</div></li><li class="symbol-button-trigger"><div title="ሙ">ሙ</div></li><li class="symbol-button-trigger"><div title="ሚ">ሚ</div></li><li class="symbol-button-trigger"><div title="ማ">ማ</div></li><li class="symbol-button-trigger"><div title="ሜ">ሜ</div></li><li class="symbol-button-trigger"><div title="ም">ም</div></li><li class="symbol-button-trigger"><div title="ሞ">ሞ</div></li><li class="symbol-button-trigger"><div title="ሟ">ሟ</div></li><li class="symbol-button-trigger"><div title="ሠ">ሠ</div></li><li class="symbol-button-trigger"><div title="ሡ">ሡ</div></li><li class="symbol-button-trigger"><div title="ሢ">ሢ</div></li><li class="symbol-button-trigger"><div title="ሣ">ሣ</div></li><li class="symbol-button-trigger"><div title="ሤ">ሤ</div></li><li class="symbol-button-trigger"><div title="ሥ">ሥ</div></li><li class="symbol-button-trigger"><div title="ሦ">ሦ</div></li><li class="symbol-button-trigger"><div title="ሧ">ሧ</div></li><li class="symbol-button-trigger"><div title="ረ">ረ</div></li><li class="symbol-button-trigger"><div title="ሩ">ሩ</div></li><li class="symbol-button-trigger"><div title="ሪ">ሪ</div></li><li class="symbol-button-trigger"><div title="ራ">ራ</div></li><li class="symbol-button-trigger"><div title="ሬ">ሬ</div></li><li class="symbol-button-trigger"><div title="ር">ር</div></li><li class="symbol-button-trigger"><div title="ሮ">ሮ</div></li><li class="symbol-button-trigger"><div title="ሯ">ሯ</div></li><li class="symbol-button-trigger"><div title="ሰ">ሰ</div></li><li class="symbol-button-trigger"><div title="ሱ">ሱ</div></li><li class="symbol-button-trigger"><div title="ሲ">ሲ</div></li><li class="symbol-button-trigger"><div title="ሳ">ሳ</div></li><li class="symbol-button-trigger"><div title="ሴ">ሴ</div></li><li class="symbol-button-trigger"><div title="ስ">ስ</div></li><li class="symbol-button-trigger"><div title="ሶ">ሶ</div></li><li class="symbol-button-trigger"><div title="ሷ">ሷ</div></li><li class="symbol-button-trigger"><div title="ሸ">ሸ</div></li><li class="symbol-button-trigger"><div title="ሹ">ሹ</div></li><li class="symbol-button-trigger"><div title="ሺ">ሺ</div></li><li class="symbol-button-trigger"><div title="ሻ">ሻ</div></li><li class="symbol-button-trigger"><div title="ሼ">ሼ</div></li><li class="symbol-button-trigger"><div title="ሽ">ሽ</div></li><li class="symbol-button-trigger"><div title="ሾ">ሾ</div></li><li class="symbol-button-trigger"><div title="ሿ">ሿ</div></li><li class="symbol-button-trigger"><div title="ቀ">ቀ</div></li><li class="symbol-button-trigger"><div title="ቁ">ቁ</div></li><li class="symbol-button-trigger"><div title="ቂ">ቂ</div></li><li class="symbol-button-trigger"><div title="ቃ">ቃ</div></li><li class="symbol-button-trigger"><div title="ቄ">ቄ</div></li><li class="symbol-button-trigger"><div title="ቅ">ቅ</div></li><li class="symbol-button-trigger"><div title="ቆ">ቆ</div></li><li class="symbol-button-trigger"><div title="ቇ">ቇ</div></li><li class="symbol-button-trigger"><div title="ቈ">ቈ</div></li><li class="symbol-button-trigger"><div title="቉">቉</div></li><li class="symbol-button-trigger"><div title="ቊ">ቊ</div></li><li class="symbol-button-trigger"><div title="ቋ">ቋ</div></li><li class="symbol-button-trigger"><div title="ቌ">ቌ</div></li><li class="symbol-button-trigger"><div title="ቍ">ቍ</div></li><li class="symbol-button-trigger"><div title="቎">቎</div></li><li class="symbol-button-trigger"><div title="቏">቏</div></li><li class="symbol-button-trigger"><div title="ቐ">ቐ</div></li><li class="symbol-button-trigger"><div title="ቑ">ቑ</div></li><li class="symbol-button-trigger"><div title="ቒ">ቒ</div></li><li class="symbol-button-trigger"><div title="ቓ">ቓ</div></li><li class="symbol-button-trigger"><div title="ቔ">ቔ</div></li><li class="symbol-button-trigger"><div title="ቕ">ቕ</div></li><li class="symbol-button-trigger"><div title="ቖ">ቖ</div></li><li class="symbol-button-trigger"><div title="቗">቗</div></li><li class="symbol-button-trigger"><div title="ቘ">ቘ</div></li><li class="symbol-button-trigger"><div title="቙">቙</div></li><li class="symbol-button-trigger"><div title="ቚ">ቚ</div></li><li class="symbol-button-trigger"><div title="ቛ">ቛ</div></li><li class="symbol-button-trigger"><div title="ቜ">ቜ</div></li><li class="symbol-button-trigger"><div title="ቝ">ቝ</div></li><li class="symbol-button-trigger"><div title="቞">቞</div></li><li class="symbol-button-trigger"><div title="቟">቟</div></li><li class="symbol-button-trigger"><div title="በ">በ</div></li><li class="symbol-button-trigger"><div title="ቡ">ቡ</div></li><li class="symbol-button-trigger"><div title="ቢ">ቢ</div></li><li class="symbol-button-trigger"><div title="ባ">ባ</div></li><li class="symbol-button-trigger"><div title="ቤ">ቤ</div></li><li class="symbol-button-trigger"><div title="ብ">ብ</div></li><li class="symbol-button-trigger"><div title="ቦ">ቦ</div></li><li class="symbol-button-trigger"><div title="ቧ">ቧ</div></li><li class="symbol-button-trigger"><div title="ቨ">ቨ</div></li><li class="symbol-button-trigger"><div title="ቩ">ቩ</div></li><li class="symbol-button-trigger"><div title="ቪ">ቪ</div></li><li class="symbol-button-trigger"><div title="ቫ">ቫ</div></li><li class="symbol-button-trigger"><div title="ቬ">ቬ</div></li><li class="symbol-button-trigger"><div title="ቭ">ቭ</div></li><li class="symbol-button-trigger"><div title="ቮ">ቮ</div></li><li class="symbol-button-trigger"><div title="ቯ">ቯ</div></li><li class="symbol-button-trigger"><div title="ተ">ተ</div></li><li class="symbol-button-trigger"><div title="ቱ">ቱ</div></li><li class="symbol-button-trigger"><div title="ቲ">ቲ</div></li><li class="symbol-button-trigger"><div title="ታ">ታ</div></li><li class="symbol-button-trigger"><div title="ቴ">ቴ</div></li><li class="symbol-button-trigger"><div title="ት">ት</div></li><li class="symbol-button-trigger"><div title="ቶ">ቶ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ጀ">ጀ</div></li><li class="symbol-button-trigger"><div title="ጁ">ጁ</div></li><li class="symbol-button-trigger"><div title="ጂ">ጂ</div></li><li class="symbol-button-trigger"><div title="ጃ">ጃ</div></li><li class="symbol-button-trigger"><div title="ጄ">ጄ</div></li><li class="symbol-button-trigger"><div title="ጅ">ጅ</div></li><li class="symbol-button-trigger"><div title="ጆ">ጆ</div></li><li class="symbol-button-trigger"><div title="ጇ">ጇ</div></li><li class="symbol-button-trigger"><div title="ገ">ገ</div></li><li class="symbol-button-trigger"><div title="ጉ">ጉ</div></li><li class="symbol-button-trigger"><div title="ጊ">ጊ</div></li><li class="symbol-button-trigger"><div title="ጋ">ጋ</div></li><li class="symbol-button-trigger"><div title="ጌ">ጌ</div></li><li class="symbol-button-trigger"><div title="ግ">ግ</div></li><li class="symbol-button-trigger"><div title="ጎ">ጎ</div></li><li class="symbol-button-trigger"><div title="ጏ">ጏ</div></li><li class="symbol-button-trigger"><div title="ጐ">ጐ</div></li><li class="symbol-button-trigger"><div title="጑">጑</div></li><li class="symbol-button-trigger"><div title="ጒ">ጒ</div></li><li class="symbol-button-trigger"><div title="ጓ">ጓ</div></li><li class="symbol-button-trigger"><div title="ጔ">ጔ</div></li><li class="symbol-button-trigger"><div title="ጕ">ጕ</div></li><li class="symbol-button-trigger"><div title="጖">጖</div></li><li class="symbol-button-trigger"><div title="጗">጗</div></li><li class="symbol-button-trigger"><div title="ጘ">ጘ</div></li><li class="symbol-button-trigger"><div title="ጙ">ጙ</div></li><li class="symbol-button-trigger"><div title="ጚ">ጚ</div></li><li class="symbol-button-trigger"><div title="ጛ">ጛ</div></li><li class="symbol-button-trigger"><div title="ጜ">ጜ</div></li><li class="symbol-button-trigger"><div title="ጝ">ጝ</div></li><li class="symbol-button-trigger"><div title="ጞ">ጞ</div></li><li class="symbol-button-trigger"><div title="ጟ">ጟ</div></li><li class="symbol-button-trigger"><div title="ጠ">ጠ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᘀ">ᘀ</div></li><li class="symbol-button-trigger"><div title="ᘁ">ᘁ</div></li><li class="symbol-button-trigger"><div title="ᘂ">ᘂ</div></li><li class="symbol-button-trigger"><div title="ᘃ">ᘃ</div></li><li class="symbol-button-trigger"><div title="ᘄ">ᘄ</div></li><li class="symbol-button-trigger"><div title="ᘅ">ᘅ</div></li><li class="symbol-button-trigger"><div title="ᘆ">ᘆ</div></li><li class="symbol-button-trigger"><div title="ᘇ">ᘇ</div></li><li class="symbol-button-trigger"><div title="ᘈ">ᘈ</div></li><li class="symbol-button-trigger"><div title="ᘉ">ᘉ</div></li><li class="symbol-button-trigger"><div title="ᘊ">ᘊ</div></li><li class="symbol-button-trigger"><div title="ᘋ">ᘋ</div></li><li class="symbol-button-trigger"><div title="ᘌ">ᘌ</div></li><li class="symbol-button-trigger"><div title="ᘍ">ᘍ</div></li><li class="symbol-button-trigger"><div title="ᘎ">ᘎ</div></li><li class="symbol-button-trigger"><div title="ᘏ">ᘏ</div></li><li class="symbol-button-trigger"><div title="ᘐ">ᘐ</div></li><li class="symbol-button-trigger"><div title="ᘑ">ᘑ</div></li><li class="symbol-button-trigger"><div title="ᘒ">ᘒ</div></li><li class="symbol-button-trigger"><div title="ᘓ">ᘓ</div></li><li class="symbol-button-trigger"><div title="ᘔ">ᘔ</div></li><li class="symbol-button-trigger"><div title="ᘕ">ᘕ</div></li><li class="symbol-button-trigger"><div title="ᘖ">ᘖ</div></li><li class="symbol-button-trigger"><div title="ᘗ">ᘗ</div></li><li class="symbol-button-trigger"><div title="ᘘ">ᘘ</div></li><li class="symbol-button-trigger"><div title="ᘙ">ᘙ</div></li><li class="symbol-button-trigger"><div title="ᘚ">ᘚ</div></li><li class="symbol-button-trigger"><div title="ᘛ">ᘛ</div></li><li class="symbol-button-trigger"><div title="ᘜ">ᘜ</div></li><li class="symbol-button-trigger"><div title="ᘝ">ᘝ</div></li><li class="symbol-button-trigger"><div title="ᘞ">ᘞ</div></li><li class="symbol-button-trigger"><div title="ᘟ">ᘟ</div></li><li class="symbol-button-trigger"><div title="ᘠ">ᘠ</div></li><li class="symbol-button-trigger"><div title="ᘡ">ᘡ</div></li><li class="symbol-button-trigger"><div title="ᘢ">ᘢ</div></li><li class="symbol-button-trigger"><div title="ᘣ">ᘣ</div></li><li class="symbol-button-trigger"><div title="ᘤ">ᘤ</div></li><li class="symbol-button-trigger"><div title="ᘥ">ᘥ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᜀ">ᜀ</div></li><li class="symbol-button-trigger"><div title="ᜁ">ᜁ</div></li><li class="symbol-button-trigger"><div title="ᜂ">ᜂ</div></li><li class="symbol-button-trigger"><div title="ᜃ">ᜃ</div></li><li class="symbol-button-trigger"><div title="ᜄ">ᜄ</div></li><li class="symbol-button-trigger"><div title="ᜅ">ᜅ</div></li><li class="symbol-button-trigger"><div title="ᜆ">ᜆ</div></li><li class="symbol-button-trigger"><div title="ᜇ">ᜇ</div></li><li class="symbol-button-trigger"><div title="ᜈ">ᜈ</div></li><li class="symbol-button-trigger"><div title="ᜉ">ᜉ</div></li><li class="symbol-button-trigger"><div title="ᜊ">ᜊ</div></li><li class="symbol-button-trigger"><div title="ᜋ">ᜋ</div></li><li class="symbol-button-trigger"><div title="ᜌ">ᜌ</div></li><li class="symbol-button-trigger"><div title="ᜍ">ᜍ</div></li><li class="symbol-button-trigger"><div title="ᜎ">ᜎ</div></li><li class="symbol-button-trigger"><div title="ᜏ">ᜏ</div></li><li class="symbol-button-trigger"><div title="ᜐ">ᜐ</div></li><li class="symbol-button-trigger"><div title="ᜑ">ᜑ</div></li><li class="symbol-button-trigger"><div title="ᜒ">ᜒ</div></li><li class="symbol-button-trigger"><div title="ᜓ">ᜓ</div></li><li class="symbol-button-trigger"><div title="᜔">᜔</div></li><li class="symbol-button-trigger"><div title="᜕">᜕</div></li><li class="symbol-button-trigger"><div title="᜖">᜖</div></li><li class="symbol-button-trigger"><div title="᜗">᜗</div></li><li class="symbol-button-trigger"><div title="᜘">᜘</div></li><li class="symbol-button-trigger"><div title="᜙">᜙</div></li><li class="symbol-button-trigger"><div title="᜚">᜚</div></li><li class="symbol-button-trigger"><div title="᜛">᜛</div></li><li class="symbol-button-trigger"><div title="᜜">᜜</div></li><li class="symbol-button-trigger"><div title="᜝">᜝</div></li><li class="symbol-button-trigger"><div title="᜞">᜞</div></li><li class="symbol-button-trigger"><div title="ᜟ">ᜟ</div></li><li class="symbol-button-trigger"><div title="ᜠ">ᜠ</div></li><li class="symbol-button-trigger"><div title="ᜡ">ᜡ</div></li><li class="symbol-button-trigger"><div title="ᜢ">ᜢ</div></li><li class="symbol-button-trigger"><div title="ᜣ">ᜣ</div></li><li class="symbol-button-trigger"><div title="ᜤ">ᜤ</div></li><li class="symbol-button-trigger"><div title="ᜥ">ᜥ</div></li><li class="symbol-button-trigger"><div title="ᜦ">ᜦ</div></li><li class="symbol-button-trigger"><div title="ᜧ">ᜧ</div></li><li class="symbol-button-trigger"><div title="ᜨ">ᜨ</div></li><li class="symbol-button-trigger"><div title="ᜩ">ᜩ</div></li><li class="symbol-button-trigger"><div title="ᜪ">ᜪ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᤀ">ᤀ</div></li><li class="symbol-button-trigger"><div title="ᤁ">ᤁ</div></li><li class="symbol-button-trigger"><div title="ᤂ">ᤂ</div></li><li class="symbol-button-trigger"><div title="ᤃ">ᤃ</div></li><li class="symbol-button-trigger"><div title="ᤄ">ᤄ</div></li><li class="symbol-button-trigger"><div title="ᤅ">ᤅ</div></li><li class="symbol-button-trigger"><div title="ᤆ">ᤆ</div></li><li class="symbol-button-trigger"><div title="ᤇ">ᤇ</div></li><li class="symbol-button-trigger"><div title="ᤈ">ᤈ</div></li><li class="symbol-button-trigger"><div title="ᤉ">ᤉ</div></li><li class="symbol-button-trigger"><div title="ᤊ">ᤊ</div></li><li class="symbol-button-trigger"><div title="ᤋ">ᤋ</div></li><li class="symbol-button-trigger"><div title="ᤌ">ᤌ</div></li><li class="symbol-button-trigger"><div title="ᤍ">ᤍ</div></li><li class="symbol-button-trigger"><div title="ᤎ">ᤎ</div></li><li class="symbol-button-trigger"><div title="ᤏ">ᤏ</div></li><li class="symbol-button-trigger"><div title="ᤐ">ᤐ</div></li><li class="symbol-button-trigger"><div title="ᤑ">ᤑ</div></li><li class="symbol-button-trigger"><div title="ᤒ">ᤒ</div></li><li class="symbol-button-trigger"><div title="ᤓ">ᤓ</div></li><li class="symbol-button-trigger"><div title="ᤔ">ᤔ</div></li><li class="symbol-button-trigger"><div title="ᤕ">ᤕ</div></li><li class="symbol-button-trigger"><div title="ᤖ">ᤖ</div></li><li class="symbol-button-trigger"><div title="ᤗ">ᤗ</div></li><li class="symbol-button-trigger"><div title="ᤘ">ᤘ</div></li><li class="symbol-button-trigger"><div title="ᤙ">ᤙ</div></li><li class="symbol-button-trigger"><div title="ᤚ">ᤚ</div></li><li class="symbol-button-trigger"><div title="ᤛ">ᤛ</div></li><li class="symbol-button-trigger"><div title="ᤜ">ᤜ</div></li><li class="symbol-button-trigger"><div title="ᤝ">ᤝ</div></li><li class="symbol-button-trigger"><div title="ᤞ">ᤞ</div></li><li class="symbol-button-trigger"><div title="᤟">᤟</div></li><li class="symbol-button-trigger"><div title="ᤠ">ᤠ</div></li><li class="symbol-button-trigger"><div title="ᤡ">ᤡ</div></li><li class="symbol-button-trigger"><div title="ᤢ">ᤢ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᬀ">ᬀ</div></li><li class="symbol-button-trigger"><div title="ᬁ">ᬁ</div></li><li class="symbol-button-trigger"><div title="ᬂ">ᬂ</div></li><li class="symbol-button-trigger"><div title="ᬃ">ᬃ</div></li><li class="symbol-button-trigger"><div title="ᬄ">ᬄ</div></li><li class="symbol-button-trigger"><div title="ᬅ">ᬅ</div></li><li class="symbol-button-trigger"><div title="ᬆ">ᬆ</div></li><li class="symbol-button-trigger"><div title="ᬇ">ᬇ</div></li><li class="symbol-button-trigger"><div title="ᬈ">ᬈ</div></li><li class="symbol-button-trigger"><div title="ᬉ">ᬉ</div></li><li class="symbol-button-trigger"><div title="ᬊ">ᬊ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ഀ">ഀ</div></li><li class="symbol-button-trigger"><div title="ഁ">ഁ</div></li><li class="symbol-button-trigger"><div title="ം">ം</div></li><li class="symbol-button-trigger"><div title="ഃ">ഃ</div></li><li class="symbol-button-trigger"><div title="ഄ">ഄ</div></li><li class="symbol-button-trigger"><div title="അ">അ</div></li><li class="symbol-button-trigger"><div title="ആ">ആ</div></li><li class="symbol-button-trigger"><div title="ഇ">ഇ</div></li><li class="symbol-button-trigger"><div title="ഈ">ഈ</div></li><li class="symbol-button-trigger"><div title="ഉ">ഉ</div></li><li class="symbol-button-trigger"><div title="ഊ">ഊ</div></li><li class="symbol-button-trigger"><div title="ഋ">ഋ</div></li><li class="symbol-button-trigger"><div title="ഌ">ഌ</div></li><li class="symbol-button-trigger"><div title="഍">഍</div></li><li class="symbol-button-trigger"><div title="എ">എ</div></li><li class="symbol-button-trigger"><div title="ഏ">ഏ</div></li><li class="symbol-button-trigger"><div title="ഐ">ഐ</div></li><li class="symbol-button-trigger"><div title="഑">഑</div></li><li class="symbol-button-trigger"><div title="ഒ">ഒ</div></li><li class="symbol-button-trigger"><div title="ഓ">ഓ</div></li><li class="symbol-button-trigger"><div title="ഔ">ഔ</div></li><li class="symbol-button-trigger"><div title="ക">ക</div></li><li class="symbol-button-trigger"><div title="ഖ">ഖ</div></li><li class="symbol-button-trigger"><div title="ഗ">ഗ</div></li><li class="symbol-button-trigger"><div title="ഘ">ഘ</div></li><li class="symbol-button-trigger"><div title="ങ">ങ</div></li><li class="symbol-button-trigger"><div title="ച">ച</div></li><li class="symbol-button-trigger"><div title="ഛ">ഛ</div></li><li class="symbol-button-trigger"><div title="ജ">ജ</div></li><li class="symbol-button-trigger"><div title="ഝ">ഝ</div></li><li class="symbol-button-trigger"><div title="ഞ">ഞ</div></li><li class="symbol-button-trigger"><div title="ട">ട</div></li><li class="symbol-button-trigger"><div title="ഠ">ഠ</div></li><li class="symbol-button-trigger"><div title="ഡ">ഡ</div></li><li class="symbol-button-trigger"><div title="ഢ">ഢ</div></li><li class="symbol-button-trigger"><div title="ണ">ണ</div></li><li class="symbol-button-trigger"><div title="ത">ത</div></li><li class="symbol-button-trigger"><div title="ഥ">ഥ</div></li><li class="symbol-button-trigger"><div title="ദ">ദ</div></li><li class="symbol-button-trigger"><div title="ധ">ധ</div></li><li class="symbol-button-trigger"><div title="ന">ന</div></li><li class="symbol-button-trigger"><div title="ഩ">ഩ</div></li><li class="symbol-button-trigger"><div title="പ">പ</div></li><li class="symbol-button-trigger"><div title="ഫ">ഫ</div></li><li class="symbol-button-trigger"><div title="ബ">ബ</div></li><li class="symbol-button-trigger"><div title="ഭ">ഭ</div></li><li class="symbol-button-trigger"><div title="മ">മ</div></li><li class="symbol-button-trigger"><div title="യ">യ</div></li><li class="symbol-button-trigger"><div title="ര">ര</div></li><li class="symbol-button-trigger"><div title="റ">റ</div></li><li class="symbol-button-trigger"><div title="ല">ല</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᨀ">ᨀ</div></li><li class="symbol-button-trigger"><div title="ᨁ">ᨁ</div></li><li class="symbol-button-trigger"><div title="ᨂ">ᨂ</div></li><li class="symbol-button-trigger"><div title="ᨃ">ᨃ</div></li><li class="symbol-button-trigger"><div title="ᨄ">ᨄ</div></li><li class="symbol-button-trigger"><div title="ᨅ">ᨅ</div></li><li class="symbol-button-trigger"><div title="ᨆ">ᨆ</div></li><li class="symbol-button-trigger"><div title="ᨇ">ᨇ</div></li><li class="symbol-button-trigger"><div title="ᨈ">ᨈ</div></li><li class="symbol-button-trigger"><div title="ᨉ">ᨉ</div></li><li class="symbol-button-trigger"><div title="ᨊ">ᨊ</div></li><li class="symbol-button-trigger"><div title="ᨋ">ᨋ</div></li><li class="symbol-button-trigger"><div title="ᨌ">ᨌ</div></li><li class="symbol-button-trigger"><div title="ᨍ">ᨍ</div></li><li class="symbol-button-trigger"><div title="ᨎ">ᨎ</div></li><li class="symbol-button-trigger"><div title="ᨏ">ᨏ</div></li></ul><ul style="display: none;"><li class="symbol-button-trigger"><div title="ᰀ">ᰀ</div></li><li class="symbol-button-trigger"><div title="ᰁ">ᰁ</div></li><li class="symbol-button-trigger"><div title="ᰂ">ᰂ</div></li><li class="symbol-button-trigger"><div title="ᰃ">ᰃ</div></li><li class="symbol-button-trigger"><div title="ᰄ">ᰄ</div></li><li class="symbol-button-trigger"><div title="ᰅ">ᰅ</div></li><li class="symbol-button-trigger"><div title="ᰆ">ᰆ</div></li><li class="symbol-button-trigger"><div title="ᰇ">ᰇ</div></li><li class="symbol-button-trigger"><div title="ᰈ">ᰈ</div></li><li class="symbol-button-trigger"><div title="ᰉ">ᰉ</div></li><li class="symbol-button-trigger"><div title="ᰊ">ᰊ</div></li><li class="symbol-button-trigger"><div title="ᰋ">ᰋ</div></li><li class="symbol-button-trigger"><div title="ᰌ">ᰌ</div></li><li class="symbol-button-trigger"><div title="ᰍ">ᰍ</div></li><li class="symbol-button-trigger"><div title="ᰎ">ᰎ</div></li><li class="symbol-button-trigger"><div title="ᰏ">ᰏ</div></li><li class="symbol-button-trigger"><div title="ᰐ">ᰐ</div></li><li class="symbol-button-trigger"><div title="ᰑ">ᰑ</div></li><li class="symbol-button-trigger"><div title="ᰒ">ᰒ</div></li><li class="symbol-button-trigger"><div title="ᰓ">ᰓ</div></li><li class="symbol-button-trigger"><div title="ᰔ">ᰔ</div></li><li class="symbol-button-trigger"><div title="ᰕ">ᰕ</div></li><li class="symbol-button-trigger"><div title="ᰖ">ᰖ</div></li><li class="symbol-button-trigger"><div title="ᰗ">ᰗ</div></li><li class="symbol-button-trigger"><div title="ᰘ">ᰘ</div></li><li class="symbol-button-trigger"><div title="ᰙ">ᰙ</div></li><li class="symbol-button-trigger"><div title="ᰚ">ᰚ</div></li><li class="symbol-button-trigger"><div title="ᰛ">ᰛ</div></li><li class="symbol-button-trigger"><div title="ᰜ">ᰜ</div></li><li class="symbol-button-trigger"><div title="ᰝ">ᰝ</div></li><li class="symbol-button-trigger"><div title="ᰞ">ᰞ</div></li><li class="symbol-button-trigger"><div title="ᰟ">ᰟ</div></li><li class="symbol-button-trigger"><div title="ᰠ">ᰠ</div></li><li class="symbol-button-trigger"><div title="ᰡ">ᰡ</div></li><li class="symbol-button-trigger"><div title="ᰢ">ᰢ</div></li><li class="symbol-button-trigger"><div title="ᰣ">ᰣ</div></li><li class="symbol-button-trigger"><div title="ᰤ">ᰤ</div></li><li class="symbol-button-trigger"><div title="ᰥ">ᰥ</div></li><li class="symbol-button-trigger"><div title="ᰦ">ᰦ</div></li><li class="symbol-button-trigger"><div title="ᰧ">ᰧ</div></li><li class="symbol-button-trigger"><div title="ᰨ">ᰨ</div></li><li class="symbol-button-trigger"><div title="ᰩ">ᰩ</div></li><li class="symbol-button-trigger"><div title="ᰪ">ᰪ</div></li><li class="symbol-button-trigger"><div title="ᰫ">ᰫ</div></li><li class="symbol-button-trigger"><div title="ᰬ">ᰬ</div></li><li class="symbol-button-trigger"><div title="ᰭ">ᰭ</div></li><li class="symbol-button-trigger"><div title="ᰮ">ᰮ</div></li></ul></div></div></div>
+                            <button id="symbol-trigger" type="button" class="btn action-on-click" title="Chose a fancy symbol"><span class="glyphicon"></span></button>
+                            <button id="italic-trigger" type="button" class="btn action-on-click" title="Your text in italic"><span class="glyphicon glyphicon-italic"></span></button>
+                            <button id="bold-trigger" type="button" class="btn action-on-click" title="Your text in bold"><span class="glyphicon glyphicon-bold"></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <input id="text" type="text" class="form-control text-jewel action-on-click" value="---Jweel---------" style="font-family: Norican, Symbols; font-style: normal; font-weight: normal;">
+                        <div class="clearfix"></div>
+                        <label><b>Select a ring size:</b></label>
+                        <a href="textring.html" class="size-guide-trigger" data-toggle="modal" data-target="#sizeguide"><i class="icon-question" data-original-title="" title=""></i>&nbsp;Size explanation</a>
+                        <div class="range-container">
+                            <div class="size-span">54mm</div>
+                            <div class="range range-size action-on-click ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" disabled="" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="textring.html" style="left: 60.5263%;"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="generate-trigger" type="button" data-toggle="tooltip" class="btn btn-blue generate-3d-trigger shortcut-tooltip action-on-click" title="" data-original-title="Launch the 3D visualisation process">Design my ring</button>
+    </div>
+</div>
+
+    </div>
+    <div class="box-creation box-right vertical-center-right">
+
+
+
+<div id="cart-content" class="content">
+    <label><b>Select a material:</b></label>
+    <select id="select-material" name="select-material" style="display: none;">
+        <option value="silver" selected="">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="bronze">Bronze</option>
+        <option value="brass">Brass</option>
+        <option value="hdss">Steel</option>
+        <option value="titanium">Titanium</option>
+    </select>
+    <div id="select-finish-display">
+        <label><b>Select a finish:</b></label>
+    </div>
+    <label><b>Select 3D Render Quality:</b></label>
+    <select id="select-rendering-quality" name="select-rendering-quality" style="display: none;">
+        <option value="LQ" selected="">Low (Fast)</option>
+        <option value="HQ">High (Slow)</option>
+    </select>
+
+
+
+    <!--
+    <div class="price text-right">
+        <small>No price available</small>
+    </div>
+
+    <div class="shipment text-right"></div>
+    -->
+
+    <span class="bounding-box-info text-right" style="visibility: hidden;"><b class="size-info"></b></span>
+    <span class="bounding-box-info size-guide-trigger text-right" style="visibility: hidden;"><b><span class="dim-x">00.00</span> x <span class="dim-y">00.00</span> x <span class="dim-z">00.00</span>mm</b></span>
+
+        <button type="button" class="btn btn-block btn-blue surface-show-hook" id="export-obj">Export to OBJ</button>
+
+    <!--
+    <button type="button" class="btn btn-block btn-blue add-cart-trigger surface-show-hook action-on-click" disabled>Add to cart</button>
+
+
+    <button type="button" class="save-file-trigger btn btn-block btn-dark save-creation-trigger surface-show-hook" disabled><span class="icon-save pull-left"></span>&nbsp;Save</button>
+    -->
+</div>
+
+
+    </div>
+
+
+
+    <div id="webgl">
+        <canvas id="viewerCanvas" width="1920" height="860" tabindex="0" contenteditable="true" style="width: 1920px; height: 860px; visibility: visible;"></canvas>
+        <div class="box-generating no-select" style="display: none;"><a id="box-generating" href="textring.html" class="error" style="display: none;"></a>
+        </div>
+    </div>
+    <div class="hand-buttons" style="display: block;">
+        <!--<button class="btn action-button btn-hand btn-hand-left"><img alt="jweel hand" src="../static/img/btn/hand_icon_white.png"/></button>-->
+        <button class="btn action-button btn-hand btn-hand-right"><img alt="jweel hand" src="../static/img/btn/hand_icon_white.png"></button>
+    </div>
+
+</section>
+
+
+
+
+
+<div id="sizeguide" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">How to get my ring size?</h4>
+      </div>
+      <div class="modal-body">
+        <!-- accordion" -->
+
+        <p style="margin:20px;">Here are three ways to get your ring size.</p>
+        <div class="panel-group" id="csg">
+          <div class="panel panel-default">
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg1" data-parent="#csg">
+              <h4 class="panel-title">Method 1: with a string</h4>
+            </div>
+            <div id="csg1" class="panel-collapse collapse">
+                <img class="img-thumbnail" style="margin: 20px;" alt="taille de doigt" src="../static/img/pics/sizeguide.jpg">
+                <ol>
+                    <li>Take a string or a piece of paper.</li>
+                    <li>Wrap it around your finger (make sure the string glides easily).</li>
+                    <li>Use a pen to mark the spot where the string joins.</li>
+                    <li>Measure the string with a ruler (mm).</li>
+                </ol>
+            </div>
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg2" data-parent="#csg">
+              <h4 class="panel-title">Method 2: with one of your rings</h4>
+            </div>
+            <div id="csg2" class="panel-collapse collapse">
+                <img class="img-thumbnail" style="margin: 20px;" alt="taille de doigt" src="../static/img/pics/sizeguide2.png">
+                <ol>
+                    <li>Take one of your rings.</li>
+                    <li>Measure (mm) the inner diameter of the ring with a ruler.</li>
+                    <li>Multiply by 3.14</li>
+                </ol>
+            </div>
+            <div class="panel-heading" data-toggle="collapse" data-target="#csg3" data-parent="#csg">
+              <h4 class="panel-title">Method 3: from your jewelry known ring size</h4>
+            </div>
+            <div id="csg3" class="panel-collapse collapse">
+                <p style="margin:20px;">If you already know your ring size in a specific jewelry standard, use the following table to convert it back to mm.</p>
+                <img class="img-thumbnail" style="width:100%;" alt="conversions" src="../static/img/pics/sizeguide3-en.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div id="connect-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height: 340px;">
+    <form id="connect-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <div style="position: absolute; top: 0; right: 0; text-align:right; padding-right: 10px;">
+            <h2>Sign in!</h2><br>
+            <a id="to-register-trigger" style="display:inline-block;" href="textring.html">Not registered yet?</a><br>
+            <span class="error"></span>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="login-email">E-mail Address</label>
+        <input type="email" class="form-control" id="login-email" name="email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" class="form-control" id="login-password" name="password" placeholder="Mot de passe" required="">
+        <a id="reset-popup-trigger" href="textring.html">forgotten your password?</a>
+      </div>
+      <button type="submit" id="connect-form-trigger" class="btn btn-blue">Sign in</button>
+    </form>
+  </div>
+</div>
+
+<div id="register-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height:360px;">
+    <form id="register-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <div style="position: absolute; top: 0; right: 0; text-align:right; padding-right: 10px;">
+            <h2>Register !</h2><br>
+            <span class="error"></span><br>
+            <a id="to-connect-trigger" style="display:none;" href="textring.html">Sign in!</a>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="register-email">E-mail Address</label>
+        <input type="email" class="form-control" id="register-email" name="email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" class="form-control" id="register-password" name="password" placeholder="Mot de passe" required="">
+      </div>
+      <div class="checkbox">
+        <label>
+            <input type="checkbox" required=""> I accept the <a target="_blank" href="terms.html">terms and conditions of Jweel</a>
+        </label>
+      </div>
+        <button type="submit" id="register-form-trigger" class="btn btn-blue">Join</button>
+    </form>
+  </div>
+</div>
+
+<div id="reset-popup-display" class="fullsize-shadow">
+  <div class="popup" style="height:260px;">
+    <form id="reset-form" method="POST">
+      <div class="box-title">
+          <img alt="jweel logo" src="../static/img/logo/jweel.png">
+          <h2 style="font-size:20px; margin-top:5px;">Retrieve your account</h2>
+          <span class="error"></span>
+      </div>
+      <div class="form-group">
+        <label for="reset-email">E-mail Address</label>
+        <input type="email" class="form-control" id="reset-email" name="reset-email" placeholder="Adresse Email" autofocus="" required="">
+      </div>
+      <button type="submit" id="reset-form-trigger" class="btn btn-blue">Send me an retrieval email</button>
+    </form>
+  </div>
+</div>
+
+<div class="overlay-help modal fade in" role="dialog">
+    <div class="slide carousel" id="carousel-help">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="legends">
+                    <div class="legend"><img src="../static/img/help/textring.png" alt=""></div>
+                    <!--<span class="legend nav-legend">Bague texte / Anneau nu / Bague multi-anneau</span>
+                    <span class="legend fonts-legend"><b>1.</b> Choisissez votre police de caractère.</span>
+                    <span class="legend text-legend"><b>2.</b> Choisissez votre texte.</span>
+                    <span class="legend size-legend"><b>3.</b> Choisissez votre taille de bague.</span>
+                    <span class="legend generate-legend"><b>4.</b> Générez la vue 3D.</span>
+                    <span class="legend shuffle-legend">Shuffle / Remise à zéro.</span>-->
+                </div>
+                <div class="description text-right">
+                    <h3>Textring</h3>
+                    <h2>Your ring in 3D<br>thanks to the text tools</h2>
+                    <button type="button" class="btn close-help-trigger" data-dismiss="modal">I get it, let me create</button>
+                    <button type="button" data-target="#carousel-help" class="btn go-next-slide-trigger" data-slide="next">Next hint</button>
+                    <label><input type="checkbox" name="close-help"> Don't show this message again</label>
+                </div>
+            </div>
+            <div class="item">
+                <div class="legends">
+                    <div class="legend"><img src="../static/img/help/textring.png" alt=""></div>
+                </div>
+                <div class="description text-right">
+                    <h3>Skimring</h3>
+                    <h2>Your ring in 3D<br>thanks to the text tools</h2>
+                    <button type="button" class="btn close-help-trigger" data-dismiss="modal">I get it, let me create</button>
+                    <button type="button" data-target="#carousel-help" class="btn go-next-slide-trigger" data-slide="next">Next hint</button>
+                </div>
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel-help" data-slide-to="0" class="active"><span></span></li>
+                    <li data-target="#carousel-help" data-slide-to="1"><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- load js libs at the end of the document (for speed) -->
+
+
+
+
+    <script>
+        window.media = "http://www.jweel.com";
+        window.base_url = "http://www.jweel.com";
+        window.base_lang_url = "http://www.jweel.com/en";
+        window.static_url = "../static";
+
+        // Rewrite for local hack
+        window.media = "..";
+        window.base_url = "http://www.jweel.com";
+        window.base_lang_url = "http://www.jweel.com/en";
+        window.static_url = "../static";
+
+        window.lang = "en";
+
+        window.geo = {
+            "city"        : "GRENOBLE",
+            "country"     : "FR",
+            "zipcode"     : "",
+            "citylatlong" : "45.188529,5.724524",
+        }
+        window.currency_symbol = "€";
+    </script>
+
+
+        <script src="../static/js/djangojs.js"></script>
+        <script>
+            window.gettext=function(s){
+                if(djangojs_dic[s]){
+                    return djangojs_dic[s];
+                }else{
+                    return s;
+                }
+            }
+        </script>
+
+    <script>
+        window.cartData = new CartManager();
+
+        $("img.lazy").lazyload({
+            threshold : 400,
+            effect : "fadeIn",
+            skip_invisible : false
+        });
+    </script>
+
+<script>
+    window.userMsgs = {};
+
+    window.userMsgs.defaultError = function() {
+        bootbox.alert("Sorry, an unknown error occured. In order to improve the quality of our services, this event has been registered.");
+    };
+
+    window.userMsgs.needToBeRegisteredMsgError = function () {
+        bootbox.dialog({
+            message: 'Vous devez être utilisateur de jweel pour effectuer cette action.\n Voulez-vous vous inscrire?',
+            title: 'You need to sign in',
+            buttons: {
+                cancel: {
+                    label: 'Cancel',
+                    className: "btn btn-blue",
+                    callback: function() {
+                    }
+                },
+                connect: {
+                    label: 'Sign in',
+                    className: "btn btn-blue",
+                    callback: function() {
+                        showConnectPopup();
+                    }
+                },
+                register: {
+                    label: 'Register',
+                    className: "btn btn-blue",
+                    callback: function() {
+                        showRegisterPopup();
+                    }
+                }
+            }
+        });
+    };
+
+    window.userMsgs.customErrorMsg = function (msg) {
+        if (msg===undefined || msg==="") {
+            window.userMsgs.defaultError();
+        } else {
+            bootbox.alert(msg);
+        }
+    };
+
+    window.getThumb = function( file ) {
+        var base = 'http://www.jweel.com/img/';
+
+        if( file.thumb_small ) {
+            return base + JSON.parse(file.thumb_small)['key'];
+        }
+        else if( file.thumb ) {
+            return base + JSON.parse(file.thumb)['key'];
+        }
+        else {
+            return "#";
+        }
+    }
+
+    window.onload = function() {
+        $("#connect-form").submit(login);
+        $("#register-form").submit(
+            function(e) {
+                $('#register-form-trigger').attr('disabled', true);
+                register(e);
+                e.preventDefault();
+                return false;
+            }
+        );
+        $("#reset-form").submit(reset);
+        $('.cartitem-delete').click(window.cartData.instanciateCartDel())
+        $('.order-trigger').click(function() {
+            location.href = window.base_lang_url + "/checkout/";
+        });
+
+
+
+
+        window.resolveZipCode();
+
+    };
+
+    $('#fadeout-end-of-service').click(function(){
+        $('#end-of-service-display').fadeOut();
+    });
+
+    var displayEndOfService = function(){$('#end-of-service-display').fadeIn();};
+
+</script>
+
+<script type="text/javascript" src="../static/js/site/ajax.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery/jquery.knob.js"></script>
+<script type="text/javascript">
+
+window.downloadFile = function( blob , filename, ext) {
+    var a = document.createElement('a');
+    a.href = window.URL.createObjectURL(blob);
+    var ext = ext ? ext : ".obj";
+    if(filename){
+        a.download = filename+ext;
+    }else{
+        a.download = ""+ext;
+        if(a.download === ext){
+            if(window.fileData.getFileName() !== ""){
+                a.download = window.fileData.getFileName();
+            }
+        }
+    }
+    if(a.download === ext){a.download = "model"+ext;}
+
+    // simulate a click on the link
+    if (document.createEvent) {
+        var event = document.createEvent("MouseEvents");
+        event.initEvent("click", true, true);
+        a.dispatchEvent(event);
+    } else {
+        a.click();
+    }
+};
+
+$('#export-obj').click(function() {
+    $('#export-obj').text("Exporting...");
+    $('#export-obj').prop("disabled",true);
+    var mat = new THREE.Matrix4();
+    var callback = function(blob , filename, ext){
+        window.downloadFile(blob , filename, ext);
+        $('#export-obj').prop("disabled",false);
+        $('#export-obj').text("Export to OBJ");
+    };
+    if(window.jweelTool.getToolType() === "embossedring" || window.jweelTool.getToolType() === "stylering"){
+        console.log("... Scaling according to size.");
+        var s = $('.range').slider('value');
+        mat.scale(new THREE.Vector3(s/54, s/54,s/54));
+        window.jweelTool.exportMesh(callback, mat);
+    }else{
+        window.jweelTool.exportMesh(callback);
+    }
+});
+
+window.cartSelect = new CartSelectManager ($('#select-material'), $('#select-finish-display'));
+
+window.donePostInit = function (tool){
+    // Set the default material
+
+
+    // ensure materials initialisation will be run when cartselect will be initialized
+    window.cartSelect.runWhenInitialized( function() {
+        console.log("runWhenInitialized called");
+
+        //if( !window.cartSelect.finishSelect[material]) {
+        //    window.location.reload();
+        //}
+
+        // select pickers for mat and finish decides the skim material
+        var material = window.cartSelect.matSelect.val();
+        var finish = window.cartSelect.finishSelect[material].val();
+        tool.loadMaterial(material, finish);
+
+        window.cartSelect.addChangeFunction(function () {
+            var material = window.cartSelect.matSelect.val();
+            var finish = window.cartSelect.finishSelect[material].val();
+            tool.loadMaterial(material, finish);
+        });
+    });
+
+   // Set default material for Jweel
+    skim.instances.modeler.sceneManager.setSurfaceMaterial(
+        skim.gl_materials["Uniform Physical Material"].get(function(attrs){})
+    );
+};
+
+window.launchTool = function (tool, callback) {
+
+
+
+    window.fileData = new FileManager(tool);
+    window.cartData.setFileData(window.fileData);
+
+
+
+    callback();
+    // Launch the init
+    tool.init();
+
+    $('.save-file-trigger').click(window.fileData.instanciateSave());
+    //$("#copy-file").click(window.fileData.instanciateCopy());
+    //$("#publish-file").click(window.fileData.instanciatePublish());
+    //$("#new-file").click(window.fileData.instanciateResetEverything());
+    //$('.add-cart-trigger').click( window.cartData.instanciateAddToCart());
+
+    $('#load-file-input').hide();
+    $('.load-file-trigger').click(function(){
+            $('#load-file-input').click();
+        }
+    );
+    $('#load-file-input').change(function(evt) {
+        var files = evt.target.files; // FileList object
+
+        // split extension and filename
+        var tags = files[0].name.split('.');
+        var name = "";
+        for(var i=0; i<tags.length-1; ++i){
+            name = name + tags[i];
+        }
+
+        var ext = "";
+        if(tags.length > 1){
+            ext = tags[tags.length-1];
+        }
+
+        var fr = new FileReader();
+        fr.onload = function(e) {
+            // e.target.result should contain the text
+            var json = JSON.parse(e.target.result);
+            if(json.tooltype === window.fileData.getToolType()){
+                skim.engine.reset();
+                window.fileData.setFileName(name);
+                tool.loadjsonInfo(json.jsonInfo);
+                tool.setToolInfo(JSON.parse(json.toolInfo));
+                tool.loadObject();
+            }else{
+                alert("Bad file format. Check that you gave a Jweel file and tried to load it using the adapted tool.");
+            }
+        };
+        fr.readAsText(files[0]);
+    });
+
+    $('#select-rendering-quality').change(function(evt) {
+        if($('#select-rendering-quality').val() === "HQ"){
+            window.jweelTool.setNiceGeneration();
+        }else{
+            window.jweelTool.setFastGeneration();
+        }
+    });
+
+};
+
+window.update_object_data = function (volume, surface, aabb) {
+    window.fileData.updateObjectData(volume, surface, aabb);
+    window.cartData.requestPriceData();
+};
+
+
+// init menu
+$('.icon-question').popover({
+    placement: 'right',
+    trigger: "hover",
+    container: 'body',
+    html: true,
+    delay: { show: 400, hide: 400 }
+});
+
+
+
+window.hideHand = function() {
+    $('.btn-hand').removeClass('active');
+    window.jweelTool.triggerEvent("hideHand");
+};
+
+$('.btn-hand').click(function() {
+    $(this).toggleClass('active');
+    window.jweelTool.triggerEvent($(this).hasClass('active') ? "showHand" : "hideHand");
+});
+
+</script>
+
+<script>
+
+    window.skimGenerateRing = function () {
+        $('#generate-trigger').text("Designing the ring");
+        $('#generate-trigger').append(jweelTool.loadingGif);
+        // resize the hand
+        var ringSize = $('.range-size').slider("option", "value");
+        window.cartData.setSize(ringSize);
+        window.cartData.update_price();
+        var scale = ringSize/54;
+        skim.instances.modeler.sceneManager.getNeutralObject("handHD").scale.set(scale, scale, scale);
+        skim.instances.modeler.sceneManager.neutralObjectUpdated("handHD");
+        window.jweelTool.canvasTextTool.setRLengthTotal(1.7*10);
+        window.jweelTool.setToolInfo({
+                text       : $('#text').val().replace(/ /g,''),
+                fontFamily : $('#text').css('font-family'),
+                fontWeight : $('#text').css('font-weight'),
+                fontStyle  : $('#text').css('font-style'),
+                size       : ringSize /*,
+                genMethod  : "onRing"*/
+        });
+        window.jweelTool.loadObject();
+    };
+
+    $('#generate-trigger').click(window.skimGenerateRing);
+    $('.surface-show-hook').prop('disabled',true);
+
+    var symbolsManager = new site.SymbolsUtils.SymbolsManager({
+        'container' : $('#symbols-container'),
+        'input'     : $('#text'),
+        'trigger'   : $('#symbol-trigger')
+    });
+
+    var symbolFilter = new site.SymbolsUtils.SymbolsFilter({
+        'input':$('#text')
+    });
+
+    var italicButton = new site.TextMenu.ItalicButton({
+        'input'     : $('#text'),
+        'trigger'   : $('#italic-trigger')
+    });
+
+    var boldButton = new site.TextMenu.BoldButton({
+        'input'     : $('#text'),
+        'trigger'   : $('#bold-trigger')
+    });
+
+    var fontSelect = new site.TextMenu.FontSelect({
+        'input'             : $('#text'),
+        'keyEventContainer' : $('#bold-trigger'),
+        'select'            : $('#select-font'),
+        'clickContainer'    : $('#picker-click-trigger')
+    });
+
+    window.updateTextRingMenu = function (toolInfo) {
+        $('#text').val(toolInfo.text);
+        // ring.fontFamily contains the family that is to update the select picker + our symbol font
+        // so we split it properly back to what we want
+        $("#select-font").selectpicker('val', toolInfo.fontFamily.split(",")[0]);
+        fontSelect.applyFont();
+
+        italicButton.set(toolInfo.fontStyle==="italic"? true : false);
+        boldButton.set(toolInfo.fontWeight==="bold"|| toolInfo.fontWeight==="700" ? true: false);
+
+        $('.range-size').slider('value', toolInfo.size);
+        $('.range-container .size-span').text(toolInfo.size+'mm');
+    };
+
+    window.done_surface = function () {
+        window.jweelTool.showSurface();
+        $('.surface-show-hook').prop('disabled',false);
+        window.jweelTool.progress.hide();
+        $('#generate-trigger').text("Design my ring");
+        $('.hand-buttons').show();
+    };
+
+    window.start_surface = function () {
+        $('.surface-show-hook').prop('disabled',true);
+        window.jweelTool.progress.show();
+        $('.hand-buttons').hide();
+        window.hideHand();
+    };
+
+    // Callbacks used in the jweelTool
+    var pageInterface = {
+        updateToolMenu : window.updateTextRingMenu,
+        donePostInit   : window.donePostInit,
+        startSurface     : window.start_surface,
+        doneSurface      : window.done_surface,
+        updateObjectData : window.update_object_data
+    };
+
+    window.jweelTool = new site.TextringTool(
+        viewerCanvas,
+        site.toolModes.edit,
+        pageInterface
+    );
+
+    window.launchTool(window.jweelTool, function () {
+        //Init range
+        $('.range-size').each(function() {
+            var $elt = $(this);
+
+            $elt.slider(
+                {
+                    disabled : false,
+                    min: window.cartData.getMinRange(),
+                    max: window.cartData.getMaxRange(),
+                    step: window.cartData.getStep(),
+                    value: window.cartData.getDefaultVal(),
+                    slide: function(event, ui) {
+                        if(event.originalEvent) {
+                            $elt.prev('.size-span').text(ui.value+'mm');
+                        }
+                    }
+                }
+            );
+        });
+    });
+
+    var displayEndOfService = function(){$('#end-of-service-display').fadeIn();};
+
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,181 @@
+/****** MIXINS *****/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/** ADD BY MOUSTACH **/
+@charset "UTF-8";
+#content h1 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #4d4d4d;
+}
+#content h2 {
+  font-size: 22px;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4d4d4d;
+  text-align: left;
+}
+#content h3 a {
+  color: #4d4d4d;
+}
+#content h4 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#content h4 a {
+  color: #4d4d4d;
+}
+#content p {
+  text-align: justify;
+}
+#content a:not(.btn) {
+  color: #002e32 !important;
+}
+#content a:not(.btn):hover {
+  color: #004950 !important;
+}
+body {
+  background-color: #f2f1ef;
+}
+textarea {
+  display: block;
+  width: 100%;
+}
+.boxed {
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 3px #888888;
+  margin-bottom: 30px;
+}
+.boxed h1 {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.summary {
+  padding-left: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+.summary ul {
+  padding-left: 20px;
+}
+.summary ul a {
+  font-size: 12px;
+}
+.person {
+  text-align: center;
+  margin: 0px auto;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+.person img {
+  width: 120px;
+  height: 160px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.person .name {
+  text-align: left;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: bold;
+}
+.person .position {
+  text-align: left;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 14px;
+}
+.person p.desc {
+  margin: 0px;
+}
+a.btn-linkedin {
+  font-size: 12px;
+  padding: 5px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #60a9ce;
+  *background-color: #4393bb;
+  background-image: -moz-linear-gradient(top, #73b8db, #4393bb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#73b8db), to(#4393bb));
+  background-image: -webkit-linear-gradient(top, #73b8db, #4393bb);
+  background-image: -o-linear-gradient(top, #73b8db, #4393bb);
+  background-image: linear-gradient(to bottom, #73b8db, #4393bb);
+  background-repeat: repeat-x;
+  border-color: #4393bb #4393bb #2f6783;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff73b8db', endColorstr='#ff4393bb', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+a.btn-linkedin:hover {
+  color: #ffffff;
+  background-color: #009cda;
+  /* fallback color */
+  background: -moz-linear-gradient(top, #0073b2, #009cda);
+  background: -ms-linear-gradient(top, #0073b2, #009cda);
+  background: -webkit-linear-gradient(top, #0073b2, #009cda);
+}
+.tool {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 20px 0px;
+  padding: 20px;
+}
+.tool h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+.tool .col-md-6 {
+  padding: 20px;
+}
+.tool .col-md-6 p {
+  margin-left: 0px;
+}
+.mat-trigger {
+  text-align: center;
+}
+.mat-trigger img {
+  height: 100px;
+  width: 100%;
+}
+.mat-trigger span {
+  font-weight: bold;
+}
+.mat-trigger.active img,
+.mat-trigger:hover img {
+  background-color: #002e32;
+}
+.mat-desc {
+  padding: 0px 30px 0px 30px;
+}
+.mat-table {
+  padding: 0px 15px 15px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mat-table table td {
+  padding-right: 5px;
+}
+.mat-example {
+  margin-top: 20px;
+  text-align: center;
+}
