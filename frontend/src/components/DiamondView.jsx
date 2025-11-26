@@ -444,7 +444,7 @@ const DiamondView = () => {
 
   const getModelPath = () => {
      if (diamond?.threeDModelUrl) return `${import.meta.env.VITE_BACKEND_URL}${diamond.threeDModelUrl}`;
-     return "/images/GemstoneAssets.glb"; 
+     return `${import.meta.env.BASE_URL}images/GemstoneAssets.glb`; 
   };
 
   const handleColorChange = (color) => {
