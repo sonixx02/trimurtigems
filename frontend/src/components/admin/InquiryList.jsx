@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -9,6 +10,7 @@ const InquiryList = () => {
   const [inquiries, setInquiries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchInquiries();
@@ -81,10 +83,10 @@ const InquiryList = () => {
 
       <div className="space-y-4">
         {filteredInquiries.map(inquiry => (
-          <div key={inquiry._id} className="bg-white p-6 rounded-lg shadow border">
-            <div className="flex justify-between items-start">
-              <div>
-                <div className="flex items-center gap-2 mb-2">
+          <div key={inquiry._id} className="bg-white p-4 sm:p-6 rounded-lg shadow border">
+            <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+              <div className="w-full sm:w-auto">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
                   <span className={`px-2 py-1 rounded text-xs font-bold ${inquiry.type === 'Set' ? 'bg-purple-100 text-purple-800' : 'bg-blue-100 text-blue-800'}`}>
                     {inquiry.type}
                   </span>
@@ -98,12 +100,12 @@ const InquiryList = () => {
                 {inquiry.baseItemName && <p className="text-sm text-gray-500 mt-1">Ref: {inquiry.baseItemName}</p>}
               </div>
               
-              <div className="flex flex-col gap-2 items-end">
+              <div className="flex flex-row sm:flex-col gap-2 items-center sm:items-end w-full sm:w-auto justify-between sm:justify-start">
                 <Select 
                     defaultValue={inquiry.status} 
                     onValueChange={(val) => handleStatusUpdate(inquiry._id, val)}
                 >
-                    <SelectTrigger className="w-[140px] h-8">
+                    <SelectTrigger className="w-[130px] sm:w-[140px] h-8">
                         <SelectValue placeholder="Status" />
                     </SelectTrigger>
                     <SelectContent>
@@ -114,8 +116,8 @@ const InquiryList = () => {
                     </SelectContent>
                 </Select>
 
-                <div className="flex gap-2 mt-2">
-                    <Button variant="outline" size="sm" onClick={() => window.location.href = `/admin/inquiries/${inquiry._id}`}>
+                <div className="flex gap-2 mt-0 sm:mt-2">
+                    <Button variant="outline" size="sm" onClick={() => navigate(`/admin/inquiries/${inquiry._id}`)}>
                     View Details
                     </Button>
                     <Button variant="destructive" size="icon" className="h-8 w-8" onClick={(e) => { e.stopPropagation(); handleDelete(inquiry._id); }}>

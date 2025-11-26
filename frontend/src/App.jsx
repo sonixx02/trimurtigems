@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import DiamondShapes from "./components/DiamondShapes";
@@ -32,7 +32,7 @@ import UserDashboard from "./components/UserDashboard";
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter basename="/trimurtigems">
+      <HashRouter>
         <div className="min-h-screen">
           <Routes>
             {/* Public Routes */}
@@ -77,7 +77,7 @@ function App() {
             </Route>
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }
