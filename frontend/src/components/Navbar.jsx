@@ -119,11 +119,11 @@ const Navbar = () => {
           <Button variant="ghost" size="icon">
             <ShoppingBag className="h-5 w-5" />
           </Button>
-          <a href="/compare">
+          <Link to="/compare">
             <Button variant="ghost" size="sm" className="hidden sm:inline-flex text-xs font-medium uppercase tracking-wider">
               Compare
             </Button>
-          </a>
+          </Link>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -135,9 +135,9 @@ const Navbar = () => {
       <div className="border-t border-b">
         <div className="px-4 sm:px-6 py-3">
           <div className="flex items-center">
-            <a href="/" className="mr-8">
+            <Link to="/" className="mr-8">
               <span className="text-2xl font-serif font-bold text-navy-900 tracking-wide">TriMurti Gems</span>
-            </a>
+            </Link>
             <div className="hidden md:flex gap-6">
               {Object.keys(navItems).map((key) => (
                 <div key={key} className="relative group">
@@ -157,13 +157,13 @@ const Navbar = () => {
                           <ul className="space-y-2">
                             {section.items.map((item, itemIdx) => (
                               <li key={itemIdx}>
-                                <a 
-                                  href={item.path} 
+                                <Link 
+                                  to={item.path} 
                                   className="text-sm text-gray-600 hover:text-blue-600 transition-colors block py-1"
                                   onClick={() => setActiveDropdown(null)}
                                 >
                                   {item.name}
-                                </a>
+                                </Link>
                               </li>
                             ))}
                           </ul>
@@ -204,9 +204,9 @@ const Navbar = () => {
                           <ul className="space-y-2">
                             {section.items.map((item, itemIdx) => (
                               <li key={itemIdx}>
-                                <a href={item.path} className="text-sm text-gray-600 hover:text-blue-600 block py-2">
+                                <Link to={item.path} className="text-sm text-gray-600 hover:text-blue-600 block py-2">
                                   {item.name}
-                                </a>
+                                </Link>
                               </li>
                             ))}
                           </ul>

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
@@ -8,6 +8,23 @@ import { RefreshCcwIcon, Filter, ChevronDown, ChevronUp } from "lucide-react";
 import DiamondList from "./DiamondList";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+
+const shapes = [
+  { name: "Round", image: `${import.meta.env.BASE_URL}images/round.png` },
+  { name: "Princess", image: `${import.meta.env.BASE_URL}images/princess.png` },
+  { name: "Emerald", image: `${import.meta.env.BASE_URL}images/emerald.png` },
+  { name: "Asscher", image: `${import.meta.env.BASE_URL}images/asscher.png` },
+  { name: "Cushion", image: `${import.meta.env.BASE_URL}images/cushion.png` },
+  { name: "Marquise", image: `${import.meta.env.BASE_URL}images/marquise.png` },
+  { name: "Radiant", image: `${import.meta.env.BASE_URL}images/radiant.png` },
+  { name: "Oval", image: `${import.meta.env.BASE_URL}images/oval.png` },
+  { name: "Pear", image: `${import.meta.env.BASE_URL}images/pear.png` },
+  { name: "Heart", image: `${import.meta.env.BASE_URL}images/heart.png` },
+];
+
+const cutOptions = ["Astor Ideal", "Ideal", "Very Good", "Good"];
+const colorOptions = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
+const clarityOptions = ["FL", "IF", "VVS1", "VVS2", "VS1", "VS2", "SI1", "SI2", "I1", "I2", "I3"];
 
 const DiamondDetail = () => {
   const { shape } = useParams();
@@ -23,6 +40,10 @@ const DiamondDetail = () => {
   
   // Advanced Filters
   const [selectedPolish, setSelectedPolish] = useState([]);
+  const [selectedSymmetry, setSelectedSymmetry] = useState([]);
+  const [selectedFluorescence, setSelectedFluorescence] = useState([]);
+  const [tableRange, setTableRange] = useState([50, 80]);
+  const [depthRange, setDepthRange] = useState([50, 80]);
 
   const toggleFilter = (item, list, setList) => {
     if (list.includes(item)) {
@@ -53,29 +74,6 @@ const DiamondDetail = () => {
           ))}
         </div>
       </div>
-
-      {/* Shape Filter */}
-      <div>
-        <h3 className="text-sm font-medium text-gray-900 mb-3">Shape</h3>
-        <div className="grid grid-cols-5 gap-2">
-          {shapes.map((s) => (
-            <a
-              key={s.name}
-              href={`/diamonds/${s.name.toLowerCase()}`}
-              className={`flex flex-col items-center justify-center p-2 rounded-lg border transition-all ${
-                shape?.toLowerCase() === s.name.toLowerCase() 
-                  ? "border-blue-600 bg-blue-50 ring-1 ring-blue-600" 
-                  : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
-              }`}
-            >
-              <img src={s.image} alt={s.name} className="w-8 h-8 object-contain mb-1" />
-              <span className="text-[10px] font-medium text-gray-600">{s.name}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* Price Filter */}
       <div>
         <h3 className="text-sm font-medium text-gray-900 mb-3">Price</h3>
         <Slider
